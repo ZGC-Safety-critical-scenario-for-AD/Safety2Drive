@@ -47,7 +47,7 @@ Note that the documentation contains 15 representative scenarios. You can contac
 <!-- Introduction -->
 ## 🤩 Running the Autonomous Driving Scenario
 
-## Download and setup CARLA
+### Download and setup CARLA
   - CARLA 0.9.15
     ```bash
         mkdir carla
@@ -60,20 +60,20 @@ Note that the documentation contains 15 representative scenarios. You can contac
         echo "$CARLA_ROOT/PythonAPI/carla/dist/carla-0.9.15-py3.7-linux-x86_64.egg" >> YOUR_CONDA_PATH/envs/YOUR_CONDA_ENV_NAME/lib/python3.7/site-packages/carla.pth # python 3.8 also works well, please set YOUR_CONDA_PATH and YOUR_CONDA_ENV_NAME
     ```
 
-Use the ScenarioRunner
+### Use the ScenarioRunner
 ------------------------
 
 Please take a look at the [Getting started](scenario_ruuner/Docs/getting_scenariorunner.md)
 documentation.
 
 
-Here are 5 driving scenarios
+### Here are 5 driving scenarios
 ------------------------
 | Right turn hard | Roundabout | Left turn hard | Lane merge | Overtake |
 | :-------------: | :--------: | :------------: | :--------: | :------: |
 | ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif) | ![Roundabout](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/roundabout.gif) | ![Left turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/left_turn_hard.gif) | ![Lane merge](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/lane_merge.gif) | ![Overtake](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/overtake.gif) |
 
-Here are 4 types of environmental disturbances: fog, rain, night, exposure.
+### Here are 4 types of environmental disturbances: fog, rain, night, exposure.
 ------------------------
 
 | Right turn hard | Roundabout | Left turn hard | Lane merge | Overtake |
@@ -82,7 +82,7 @@ Here are 4 types of environmental disturbances: fog, rain, night, exposure.
 
 
 
-Here are 5 safety-critical scenarios
+### Here are 5 safety-critical scenarios
 ------------------------
 
 | Right turn hard | Roundabout | Left turn hard | Lane merge | Overtake |
@@ -90,6 +90,80 @@ Here are 5 safety-critical scenarios
 | ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/right_turn_hard.gif) | ![Roundabout](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/roundabout.gif) | ![Left turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/left_turn_hard.gif) | ![Lane merge](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/lane_merge.gif) | ![Right turn simple](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/overtake.gif) |
 
 
+## 🏁 Intelligent Perception Tasks
+| Traffic Light | Lane line |
+| :-----------: | :-------: |
+| ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
+
+## 🏁 Advsarial attack Tasks
+
+### 1.Pixel-based Digital attack
+
+| Without advsarial attack vs. With advsarial attack |
+| :------------------------------------------: |
+| **Right turn hard**                               |
+| ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
+
+### 2.Patch-based Digital attack
+
+| Without advsarial attack vs. With advsarial attack |
+| :------------------------------------------: |
+| **Right turn hard**                               |
+| ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
+### 3.Camouflage-based physical attack
+
+| Without advsarial attack vs. With advsarial attack |
+| :------------------------------------------: |
+| **Right turn hard**                               |
+| ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
+### 4.Backdoor attack
+| Without advsarial attack vs. With advsarial attack |
+| :------------------------------------------: |
+| **Right turn hard**                               |
+| ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
+
+## 🏁 Leaderboard of Driving Agents
+
+### Closed-loop Evaluation Leaderboard
+
+#### UniAD
+<table>
+    <tr style="background-color: #C7C7C7; color: white;">
+        <th>Driving Agent</th>
+        <th>Scenario 1</th>
+        <th>PDMS</th>
+        <th>RC</th>
+        <th>ADS</th>
+    </tr>
+    <tr>
+        <td>UniAD</td>
+        <td>Scenario 2</td>
+        <td>0.7615</td>
+        <td>0.1684</td>
+        <td>0.1684</td>
+    </tr>
+    <tr>
+        <td>UniAD</td>
+        <td>Scenario 3</td>
+        <td>0.7215</td>
+        <td>0.169</td>
+        <td>0.0875</td>
+    </tr>
+    <tr>
+        <td>UniAD</td>
+        <td>Scenario 4</td>
+        <td>0.4952</td>
+        <td>0.091</td>
+        <td>0.0450</td>
+    </tr>
+    <tr>
+        <td>UniAD</td>
+        <td>Scenario 5</td>
+        <td>0.6888</td>
+        <td>0.121</td>
+        <td>0.0835</td>
+    </tr>
+</table>
 <!-- ROADMAP -->
 ## 📌 Roadmap
 
