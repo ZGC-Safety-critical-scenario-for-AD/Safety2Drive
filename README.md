@@ -38,7 +38,6 @@
 | Subset  | Number | File List |
 | :---: | :---: | :---: |
 | standard regulatory scenarios | 70 | XOSC File |
-| environmental disturbance scenarios | 30 | XOSC File |
 | safety-critical scenarios | 30 | XOSC File |
 | adversarial attack scenarios | 30 | XOSC File |
 
