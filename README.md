@@ -8,7 +8,7 @@
 ---
 ## Table of Contents:
 - [Table of Contents:](#table-of-contents)
-- Introduction of the Safety-Critical Scenario Benchmark
+- Introduction of the Safety2Drive
 - [🤩 Running the Autonomous Driving Scenario]
 - [:fire: Highlights]
 - [🏁 Intelligent Perception Tasks]
@@ -29,6 +29,66 @@
 - [Acknowledgments]
 - [📝 License]
 - [🔖 Citation]
+
+
+<!-- Introduction -->
+## Introduction of the Safety2Drive
+  - The dataset consists of files in the standard OpenSCENARIO format, including 70 carefully designed standard regulatory scenarios, 30 environmental disturbance scenarios, 30 safety-critical scenarios, and 30 adversarial attack scenarios.
+
+| Subset  | Number | File List |
+| :---: | :---: | :---: |
+| standard regulatory scenarios | 70 | XOSC File |
+| environmental disturbance scenarios | 30 | XOSC File |
+| safety-critical scenarios | 30 | XOSC File |
+| adversarial attack scenarios | 30 | XOSC File |
+
+Note that the documentation contains 15 representative scenarios. You can contact us via email to get the full scenario file.
+
+<!-- Introduction -->
+## 🤩 Running the Autonomous Driving Scenario
+
+## Download and setup CARLA
+  - CARLA 0.9.15
+    ```bash
+        mkdir carla
+        cd carla
+        wget https://carla-releases.s3.us-east-005.backblazeb2.com/Linux/CARLA_0.9.15.tar.gz
+        tar -xvf CARLA_0.9.15.tar.gz
+        cd Import && wget https://carla-releases.s3.us-east-005.backblazeb2.com/Linux/AdditionalMaps_0.9.15.tar.gz
+        cd .. && bash ImportAssets.sh
+        export CARLA_ROOT=YOUR_CARLA_PATH
+        echo "$CARLA_ROOT/PythonAPI/carla/dist/carla-0.9.15-py3.7-linux-x86_64.egg" >> YOUR_CONDA_PATH/envs/YOUR_CONDA_ENV_NAME/lib/python3.7/site-packages/carla.pth # python 3.8 also works well, please set YOUR_CONDA_PATH and YOUR_CONDA_ENV_NAME
+    ```
+
+Use the ScenarioRunner
+------------------------
+
+Please take a look at the [Getting started](scenario_ruuner/Docs/getting_scenariorunner.md)
+documentation.
+
+
+Here are 5 driving scenarios
+------------------------
+| Right turn hard | Roundabout | Left turn hard | Lane merge | Overtake |
+| :-------------: | :--------: | :------------: | :--------: | :------: |
+| ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif) | ![Roundabout](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/roundabout.gif) | ![Left turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/left_turn_hard.gif) | ![Lane merge](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/lane_merge.gif) | ![Overtake](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/overtake.gif) |
+
+Here are 4 types of environmental disturbances: fog, rain, night, exposure.
+------------------------
+
+| Right turn hard | Roundabout | Left turn hard | Lane merge | Overtake |
+| :-------------: | :--------: | :------------: | :--------: | :---------------: |
+| ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/right_turn_hard.gif) | ![Roundabout](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/roundabout.gif) | ![Left turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/left_turn_hard.gif) | ![Lane merge](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/lane_merge.gif) | ![Right turn simple](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/overtake.gif) |
+
+
+
+Here are 5 safety-critical scenarios
+------------------------
+
+| Right turn hard | Roundabout | Left turn hard | Lane merge | Overtake |
+| :-------------: | :--------: | :------------: | :--------: | :---------------: |
+| ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/right_turn_hard.gif) | ![Roundabout](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/roundabout.gif) | ![Left turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/left_turn_hard.gif) | ![Lane merge](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/lane_merge.gif) | ![Right turn simple](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/overtake.gif) |
+
 
 <!-- ROADMAP -->
 ## 📌 Roadmap
