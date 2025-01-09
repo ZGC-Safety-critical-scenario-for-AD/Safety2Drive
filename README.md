@@ -95,29 +95,29 @@ documentation.
 | :-----------: | :-------: |
 | ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
 
-## 🏁 Advsarial attack Tasks
+## 🏁 Adversarial attack Tasks
 
 ### 1.Pixel-based Digital attack
 
-| Without advsarial attack vs. With advsarial attack |
+| Without Adversarial attack vs. With Adversarial attack |
 | :------------------------------------------: |
 | **Right turn hard**                               |
 | ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
 
 ### 2.Patch-based Digital attack
 
-| Without advsarial attack vs. With advsarial attack |
+| Without Adversarial attack vs. With Adversarial attack |
 | :------------------------------------------: |
 | **Right turn hard**                               |
 | ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
 ### 3.Camouflage-based physical attack
 
-| Without advsarial attack vs. With advsarial attack |
+| Without Adversarial attack vs. With Adversarial attack |
 | :------------------------------------------: |
 | **Right turn hard**                               |
 | ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
 ### 4.Backdoor attack
-| Without advsarial attack vs. With advsarial attack |
+| Without Adversarial attack vs. With Adversarial attack |
 | :------------------------------------------: |
 | **Right turn hard**                               |
 | ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
