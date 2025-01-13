@@ -33,11 +33,11 @@
 
 <!-- Introduction -->
 ## Introduction of the Safety2Drive
-  - The dataset consists of files in the standard OpenSCENARIO format, including 70 carefully designed standard regulatory scenarios, 30 environmental disturbance scenarios, 30 safety-critical scenarios, and 30 adversarial attack scenarios.
+  - The dataset consists of files in the standard OpenSCENARIO format, including 70 carefully designed standard regulatory scenarios, 30 safety-critical scenarios, and 30 adversarial attack scenarios.
 
 | Subset  | Number | File List |
 | :---: | :---: | :---: |
-| standard regulatory scenarios | 70 | XOSC File |
+| standard regulatory scenarios | 100 | XOSC File |
 | safety-critical scenarios | 30 | XOSC File |
 | adversarial attack scenarios | 30 | XOSC File |
 
