@@ -65,31 +65,34 @@ Note that the documentation contains 15 representative scenarios. You can contac
 Please take a look at the [Getting started](scenario_ruuner/Docs/getting_scenariorunner.md)
 documentation.
 
-
 ### Here are 5 driving scenarios
+
 ------------------------
-| Right turn hard | Roundabout | Left turn hard | Lane merge | Overtake |
-| :-------------: | :--------: | :------------: | :--------: | :------: |
-| ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif) | ![Roundabout](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/roundabout.gif) | ![Left turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/left_turn_hard.gif) | ![Lane merge](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/lane_merge.gif) | ![Overtake](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/overtake.gif) |
+|                         Decelerating                         |                            CutIn                             |                    CutOutWithFrontVehicle                    |                    PedestrianCrossingLine                    |                       TwoWheelerRiding                       |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| ![VehicleDecelerating_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/VehicleDecelerating_128x128.gif) | ![VehicleCutIn_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/VehicleCutIn_128x128.gif) | ![VehicleCutOutWithFrontVehicle_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/VehicleCutOutWithFrontVehicle_128x128.gif) | ![PedestrianCrossingLine_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/PedestrianCrossingLine_128x128.gif) | ![TwoWheelerRiding_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/TwoWheelerRiding_128x128.gif) |
+| ![VehicleDecelerating_Bev_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/VehicleDecelerating_Bev_128x128.gif) | ![VehicleCutIn_Bev_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/VehicleCutIn_Bev_128x128.gif) | ![VehicleCutOutWithFrontVehicle_Bev_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/VehicleCutOutWithFrontVehicle_Bev_128x128.gif) | ![PedestrianCrossingLine_Bev_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/PedestrianCrossingLine_Bev_128x128.gif) | ![TwoWheelerRiding_Bev_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/TwoWheelerRiding_Bev_128x128.gif) |
 
 ### Here are 4 types of environmental disturbances: fog, rain, night, exposure.
+
 ------------------------
 
-| Right turn hard | Roundabout | Left turn hard | Lane merge | Overtake |
-| :-------------: | :--------: | :------------: | :--------: | :---------------: |
-| ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/right_turn_hard.gif) | ![Roundabout](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/roundabout.gif) | ![Left turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/left_turn_hard.gif) | ![Lane merge](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/lane_merge.gif) | ![Right turn simple](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/overtake.gif) |
+| SunnyDay | RainyDay | NightTime | FoggyDay |
+| :-------------: | :--------: | :------------: | :--------: |
+| ![SunnyDay_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/SunnyDay_128x128.gif) | ![RainyDay_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/RainyDay_128x128.gif) | ![Night_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/Night_128x128.gif) | ![](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/FoggyDay_128x128.gif) |
 
 
 
 ### Here are 5 safety-critical scenarios
+
 ------------------------
 
-| Right turn hard | Roundabout | Left turn hard | Lane merge | Overtake |
-| :-------------: | :--------: | :------------: | :--------: | :---------------: |
-| ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/right_turn_hard.gif) | ![Roundabout](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/roundabout.gif) | ![Left turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/left_turn_hard.gif) | ![Lane merge](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/lane_merge.gif) | ![Right turn simple](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/camera/overtake.gif) |
-
+| SuddenPedestrianCrossing | MaliciousCuttingIn | RunningRedLight |
+| :-------------: | :--------: | :------------: |
+| ![SuddenPedestrianCrossing_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/SuddenPedestrianCrossing_128x128.gif) | ![MaliciousCuttingIn_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/MaliciousCuttingIn_128x128.gif) | ![RunningRedLight_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/RunningRedLight_128x128.gif) |
 
 ## 🏁 Intelligent Perception Tasks
+
 | Traffic Light | Lane line |
 | :-----------: | :-------: |
 | ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
