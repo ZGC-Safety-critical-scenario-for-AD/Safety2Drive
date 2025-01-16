@@ -184,7 +184,7 @@ documentation.
   - [X] Perception Task
   - [X] Driving Agent Support
 
-- []  V1.1 Release
-  - [] Safety-Critical Scenario Generation algorithms
-- []  V1.2 Release
-  - [] LLM-based Scenario Generation algorithms
+- [ ]  V1.1 Release
+  - [ ] Safety-Critical Scenario Generation algorithms
+- [ ]  V1.2 Release
+  - [ ] LLM-based Scenario Generation algorithms
