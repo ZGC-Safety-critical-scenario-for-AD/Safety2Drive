@@ -2,7 +2,6 @@
 
 ### 🆕 Updates
 
-- **`2025-01-06:`** The paper is in progress.
 - **`2025-01-06:`** We've launched the safety-critical scenario benchmark for autonomous driving!
 
 ---
