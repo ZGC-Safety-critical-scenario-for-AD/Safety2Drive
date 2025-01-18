@@ -95,9 +95,12 @@ documentation.
 | :---------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: |
 | ![SuddenPedestrianCrossing_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/SuddenPedestrianCrossing_128x128.gif) | ![MaliciousCuttingIn_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/MaliciousCuttingIn_128x128.gif) | ![RunningRedLight_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/RunningRedLight_128x128.gif) |
 
-## 🏁 Intelligent Perception Tasks
+## 🏁 Intelligent Perception Task Support
 
-|                                        Traffic Light                                        |                                          Lane line                                          |
+|                                        Camera-based Object Detection                                        |                                          Lane line Recognition                                          |
+| :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
+| ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
+|                                        Depth Esitimation                                        |                                        Lidar-based Object Detection                                           |
 | :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
 | ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
 
