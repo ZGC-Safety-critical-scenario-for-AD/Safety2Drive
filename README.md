@@ -84,9 +84,9 @@ documentation.
 
 ---
 
-|                                           SunnyDay                                           |                                           RainyDay                                           |                                        NightTime                                        |                                   FoggyDay                                   |
-| :-------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
-| ![SunnyDay_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/SunnyDay_128x128.gif) | ![RainyDay_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/RainyDay_128x128.gif) | ![Night_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/Night_128x128.gif) | ![](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/FoggyDay_128x128.gif) |
+|                           SunnyDay                           |                           RainyDay                           |                          NightTime                           |                           FoggyDay                           |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/SunnyDay.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/RainyDay.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/NightTime.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/FoggyDay.gif" width="128" height="128"> |
 
 ### Here are 5 safety-critical scenarios
 
