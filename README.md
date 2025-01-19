@@ -2,6 +2,7 @@
 
 ### 🆕 Updates
 
+- **`2025-01-06:`** The paper is in progress.
 - **`2025-01-06:`** We've launched the safety-critical scenario benchmark for autonomous driving!
 
 ---
@@ -74,23 +75,16 @@ documentation.
 
 ---
 
-<<<<<<< HEAD
 | Decelerating | CutIn | CutOutFront | PedestrianCrossing | TwoWheelerRiding |
 | :----------: | :---: | :---------: | :----------------: | :--------------: |
-| ![gif]() |      |            |                    |                  |
-|              |      |            |                    |                  |
-=======
-|                                                        Decelerating                                                        |                                                     Cut In                                                     |                                                                   Cut Out Front                                                                   |                                                        Pedestrian Crossing                                                        |                                                   Two Wheeler Riding                                                   |
-| :-------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------: |
-|     ![VehicleDecelerating_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/VehicleDecelerating_128x128.gif)     |     ![VehicleCutIn_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/VehicleCutIn_128x128.gif)     |     ![VehicleCutOutWithFrontVehicle_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/VehicleCutOutWithFrontVehicle_128x128.gif)     |     ![PedestrianCrossingLine_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/PedestrianCrossingLine_128x128.gif)     |     ![TwoWheelerRiding_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/TwoWheelerRiding_128x128.gif)     |
-| ![VehicleDecelerating_Bev_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/VehicleDecelerating_Bev_128x128.gif) | ![VehicleCutIn_Bev_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/VehicleCutIn_Bev_128x128.gif) | ![VehicleCutOutWithFrontVehicle_Bev_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/VehicleCutOutWithFrontVehicle_Bev_128x128.gif) | ![PedestrianCrossingLine_Bev_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/PedestrianCrossingLine_Bev_128x128.gif) | ![TwoWheelerRiding_Bev_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/TwoWheelerRiding_Bev_128x128.gif) |
->>>>>>> 68a5b7141b072328e39a525c37bbf00a63dbb908
+| ![gif](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Decelerating/Decelerating_128.gif) | ![gif](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutIn/CutIn_128.gif) | ![gif](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutOutFront/CutOutFront_128.gif) | ![gif](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/PedestrianCrossing/PedestrianCrossing_128.gif) | ![gif](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/TwoWheelerRiding/TwoWheelerRiding_128.gif) |
+| ![gif](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Decelerating/Decelerating_Bev_128.gif) | ![gif](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutIn/CutIn_Bev_128.gif) | ![gif](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutOutFront/CutOutFront_Bev_128.gif) | ![gif](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/PedestrianCrossing/PedestrianCrossing_Bev_128.gif) | ![gif](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/TwoWheelerRiding/TwoWheelerRiding_Bev_128.gif) |
 
 ### Here are 4 types of environmental disturbances: fog, rain, night, exposure.
 
 ---
 
-|                                           Sunny                                           |                                           Rainy                                           |                                        Night                                      |                                   Foggy                                   |
+|                                           SunnyDay                                           |                                           RainyDay                                           |                                        NightTime                                        |                                   FoggyDay                                   |
 | :-------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------: |
 | ![SunnyDay_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/SunnyDay_128x128.gif) | ![RainyDay_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/RainyDay_128x128.gif) | ![Night_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/Night_128x128.gif) | ![](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/FoggyDay_128x128.gif) |
 
@@ -98,17 +92,13 @@ documentation.
 
 ---
 
-|                                                   Sudden Pedestrian Crossing                                                   |                                                Malicious Cutting In                                                |                                               Running Red Light                                               |
+|                                                   SuddenPedestrianCrossing                                                   |                                                MaliciousCuttingIn                                                |                                               RunningRedLight                                               |
 | :---------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: |
 | ![SuddenPedestrianCrossing_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/SuddenPedestrianCrossing_128x128.gif) | ![MaliciousCuttingIn_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/MaliciousCuttingIn_128x128.gif) | ![RunningRedLight_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/RunningRedLight_128x128.gif) |
 
-## 🏁 Intelligent Perception Task Support
+## 🏁 Intelligent Perception Tasks
 
-|                                        Camera-based Object Detection                                        |                                          Lane line Recognition                                          |
-| :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
-| ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
-
-|                                        Depth Esitimation                                        |                                        Lidar-based Object Detection                                           |
+|                                        Traffic Light                                        |                                          Lane line                                          |
 | :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
 | ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
 
@@ -194,7 +184,7 @@ documentation.
   - [X] Perception Task
   - [X] Driving Agent Support
 
-- [ ]  V1.1 Release
-  - [ ] Safety-Critical Scenario Generation algorithms
-- [ ]  V1.2 Release
-  - [ ] LLM-based Scenario Generation algorithms
+- []  V1.1 Release
+  - [] Safety-Critical Scenario Generation algorithms
+- []  V1.2 Release
+  - [] LLM-based Scenario Generation algorithms
