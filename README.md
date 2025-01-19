@@ -94,7 +94,7 @@ documentation.
 
 |                   SuddenPedestrianCrossing                   |                      MaliciousCuttingIn                      |                       RunningRedLight                        |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/videos/SuddenPedestrianCrossing.mp4" width="128" height="128"> | ![MaliciousCuttingIn_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/MaliciousCuttingIn_128x128.gif) | ![RunningRedLight_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/RunningRedLight_128x128.gif) |
+| <iframe width="128" height="128" src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/videos/SuddenPedestrianCrossing.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> | ![MaliciousCuttingIn_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/MaliciousCuttingIn_128x128.gif) | ![RunningRedLight_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/RunningRedLight_128x128.gif) |
 
 ## 🏁 Intelligent Perception Tasks
 
