@@ -92,9 +92,9 @@ documentation.
 
 ---
 
-|                   SuddenPedestrianCrossing                   |                      MaliciousCuttingIn                      |                       RunningRedLight                        |
-| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <video width="320" height="240" controls>  <br /><source src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/videos/SuddenPedestrianCrossing.mp4?raw=true" type="video/mp4">  Your browser does not support the video tag.<br /></video> | ![MaliciousCuttingIn_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/MaliciousCuttingIn_128x128.gif) | ![RunningRedLight_128x128](https://jc2001-1307981922.cos.ap-beijing.myqcloud.com/RunningRedLight_128x128.gif) |
+|                   SuddenPedestrianCrossing                   |                       OpposingLanePass                       |                      LaneChangeWithCone                      |                     TwowheelerRetrograde                     |
+| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Riskmigration/SuddenPedestrianCrossing.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Riskmigration/OpposingLanePass.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Riskmigration/LaneChangeWithCone.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Riskmigration/TwowheelerRetrograde.gif" width="128" height="128"> |
 
 ## 🏁 Intelligent Perception Tasks
 
