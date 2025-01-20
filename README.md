@@ -2,7 +2,7 @@
 
 ### 🆕 Updates
 
-- **`2025-01-06:`** We've launched the safety-critical scenario benchmark for autonomous driving!
+- **`2025-01-06:`** We've launched the safety-critical scenario benchmark for autonomous driving! 🚗
 
 ---
 
@@ -10,14 +10,14 @@
 
 - [Table of Contents:](#table-of-contents)
 - Introduction of the Safety2Drive
-- [🤩 Running the Autonomous Driving Scenario]
+- [🌍 Running the Autonomous Driving Scenario]
 - [🔥 Highlights]
-- [🏁 Intelligent Perception Tasks]
+- [🔧 Intelligent Perception Tasks]
   - [1. Object Detection]
   - [2. Traffic Sign Recognition]
   - [3. Traffic light recognition]
   - [4. Lane Line Recognition]
-- [🏁 Attack Algorithms]
+- [⚡Attack Algorithms]
   - [1. Pixel-based Digital Attacks]
   - [2. Patch-based Digital Attacks]
   - [3. Camouflage-based physical Attacks] 
