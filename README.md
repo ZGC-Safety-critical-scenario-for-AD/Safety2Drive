@@ -2,7 +2,6 @@
 
 ### 🆕 Updates
 
-- **`2025-01-06:`** The paper is in progress.
 - **`2025-01-06:`** We've launched the safety-critical scenario benchmark for autonomous driving!
 
 ---
@@ -98,8 +97,12 @@ documentation.
 
 ## 🏁 Intelligent Perception Tasks
 
-|                                        Traffic Light                                        |                                          Lane line                                          |
+|                                      Camera-based  Object Recognition                                        |                                          Lane line recognition                                          |
 | :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
+| ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
+
+| Depth Estimation | Lidar-based object Recognition|
+| :-----------: | :-------: |
 | ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
 
 ## 🏁 Adversarial attack Tasks
@@ -135,16 +138,32 @@ documentation.
 ## 🏁 Leaderboard of Driving Agents
 
 ### Closed-loop Evaluation Leaderboard
+#### Build your agent
+  - Add your agent to leaderboard/team_code/your_agent.py & Link your model folder under the Safety2Drive directory.
+    ```bash
+        Safety2Drive\ 
+          assets\
+          xosc_files\
+          leaderboard\
+            team_code\
+              --> Please add your agent HEAR
+          scenario_runner\
+          tools\
+          --> Please link your model folder HEAR
+    ```
+#### Autopilot
+|                                      Scenario Cut In                                          |                                          Scenario Sudden Pedestrian Crossing                                          |
+| :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
+| ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
 
-#### UniAD
 
 <table>
     <tr style="background-color: #C7C7C7; color: white;">
         <th>Driving Agent</th>
-        <th>Scenario 1</th>
-        <th>PDMS</th>
-        <th>RC</th>
-        <th>ADS</th>
+        <th>Scenarios</th>
+        <th>Collision Rate</th>
+        <th>Incomplete Route</th>
+        <th>Driving Score</th>
     </tr>
     <tr>
         <td>UniAD</td>
@@ -160,19 +179,65 @@ documentation.
         <td>0.169</td>
         <td>0.0875</td>
     </tr>
-    <tr>
-        <td>UniAD</td>
-        <td>Scenario 4</td>
-        <td>0.4952</td>
-        <td>0.091</td>
-        <td>0.0450</td>
+</table>
+
+#### UniAD
+|                                      Scenario Cut In                                          |                                          Scenario Sudden Pedestrian Crossing                                          |
+| :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
+| ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
+
+
+<table>
+    <tr style="background-color: #C7C7C7; color: white;">
+        <th>Driving Agent</th>
+        <th>Scenarios</th>
+        <th>Collision Rate</th>
+        <th>Incomplete Route</th>
+        <th>Driving Score</th>
     </tr>
     <tr>
         <td>UniAD</td>
-        <td>Scenario 5</td>
-        <td>0.6888</td>
-        <td>0.121</td>
-        <td>0.0835</td>
+        <td>Scenario 2</td>
+        <td>0.7615</td>
+        <td>0.1684</td>
+        <td>0.1684</td>
+    </tr>
+    <tr>
+        <td>UniAD</td>
+        <td>Scenario 3</td>
+        <td>0.7215</td>
+        <td>0.169</td>
+        <td>0.0875</td>
+    </tr>
+</table>
+
+#### Garage
+|                                      Scenario Cut In                                          |                                          Scenario Sudden Pedestrian Crossing                                          |
+| :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
+| ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
+
+
+<table>
+    <tr style="background-color: #C7C7C7; color: white;">
+        <th>Driving Agent</th>
+        <th>Scenarios</th>
+        <th>Collision Rate</th>
+        <th>Incomplete Route</th>
+        <th>Driving Score</th>
+    </tr>
+    <tr>
+        <td>UniAD</td>
+        <td>Scenario 2</td>
+        <td>0.7615</td>
+        <td>0.1684</td>
+        <td>0.1684</td>
+    </tr>
+    <tr>
+        <td>UniAD</td>
+        <td>Scenario 3</td>
+        <td>0.7215</td>
+        <td>0.169</td>
+        <td>0.0875</td>
     </tr>
 </table>
 <!-- ROADMAP -->
@@ -184,7 +249,7 @@ documentation.
   - [X] Perception Task
   - [X] Driving Agent Support
 
-- []  V1.1 Release
-  - [] Safety-Critical Scenario Generation algorithms
-- []  V1.2 Release
-  - [] LLM-based Scenario Generation algorithms
+- [ ]  V1.1 Release
+  - [ ] Safety-Critical Scenario Generation algorithms
+- [ ]  V1.2 Release
+  - [ ] LLM-based Scenario Generation algorithms
