@@ -9,47 +9,45 @@
 ## Table of Contents:
 
 - [Table of Contents:](#table-of-contents)
-- Introduction of the Safety2Drive
-- [🌍 Running the Autonomous Driving Scenario]
-- [🔥 Highlights]
-- [🔧 Intelligent Perception Tasks]
-  - [1. Object Detection]
-  - [2. Traffic Sign Recognition]
-  - [3. Traffic light recognition]
-  - [4. Lane Line Recognition]
-- [⚡Attack Algorithms]
-  - [1. Pixel-based Digital Attacks]
-  - [2. Patch-based Digital Attacks]
-  - [3. Camouflage-based physical Attacks] 
-  - [4. Backdoor Attacks]   
-- [🏁 Leaderboard of Driving Agents]
-  - [1. Autopilot]
-  - [2. UniAD]
-  - [3. Interfuser]
-  - [4. UniAD]
-- [📌 Roadmap]
-- [🔍 Safety-Critical Scenario Generation algorithms (Coming Soon)]
+- [🌍Introduction of the Safety2Drive](#-Introduction-of-the-Safety2Drive)
+- [🍃 Running the Autonomous Driving Scenario](#-Running-the-Autonomous-Driving-Scenario)
+- [🔧 Intelligent Perception Tasks](#-Intelligent-Perception-Tasks)
+  - 1. Camera-based Object Recognition
+  - 2. Lane Line Recognition
+  - 3. Depth Estimation
+  - 4. Lidar-based Object Recognition
+- [⚡Adversarial Attack Scenarios](#-Adversarial-Attack-Scenarios)
+  - 1. Pixel-based Digital Attacks
+  - 2. Patch-based Digital/Physical Attacks
+  - 3. Camouflage-based Physical Attacks
+  - 4. Backdoor Attacks
+- [🏁 Leaderboard of Driving Agents](#-Leaderboard-of-Driving-Agents)
+  - 1. Autopilot
+  - 2. Garage
+  - 3. Interfuser
+- [📌 Roadmap](#-Roadmap)
+- [🔍 Safety-Critical Scenario Generation algorithms (Stay Tuned)](#-Safety-Critical-Scenario-Generation-algorithms)
 - [Acknowledgments]
 - [📝 License]
 - [🔖 Citation]
 
 <!-- Introduction -->
 
-## Introduction of the Safety2Drive
+## 🌍 Introduction of the Safety2Drive
 
-- The dataset consists of files in the standard OpenSCENARIO format, including 70 carefully designed standard regulatory scenarios, 30 safety-critical scenarios, and 30 adversarial attack scenarios.
+- The dataset consists of files in the standard OpenSCENARIO format, including 100 carefully designed standard regulatory scenarios for functional testing, 30 safety-critical scenarios, and 30 adversarial attack scenarios.
 
 |            Subset            | Number | File List |
 | :---------------------------: | :----: | :-------: |
-| standard regulatory scenarios |  100  | XOSC File |
+| standard regulatory scenarios (functional test) |  100  | XOSC File |
 |   safety-critical scenarios   |   30   | XOSC File |
 | adversarial attack scenarios |   30   | XOSC File |
 
-Note that the documentation contains 15 representative scenarios. You can contact us via email to get the full scenario file.
+Note that the file in Repo contains 15 representative scenarios. You can contact us via email to get the full scenario file.
 
 <!-- Introduction -->
 
-## 🤩 Running the Autonomous Driving Scenario
+## 🍃 Running the Autonomous Driving Scenario
 
 ### Download and setup CARLA
 
@@ -81,7 +79,7 @@ documentation.
 | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Decelerating/Decelerating.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutIn/CutIn.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutOutFront/CutOutFront.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/PedestrianCrossing/PedestrianCrossing.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/TwoWheelerRiding/TwoWheelerRiding.gif" width="128" height="128"> |
 | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Decelerating/Decelerating_Bev.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutIn/CutIn_Bev.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutOutFront/CutOutFront_Bev.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/PedestrianCrossing/PedestrianCrossing_Bev.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/TwoWheelerRiding/TwoWheelerRiding_Bev.gif" width="128" height="128"> |
 
-### Here are 4 types of environmental disturbances: fog, rain, night, exposure.
+### Here are 4 types of environmental disturbance: sun, fog, rain, night.
 
 ---
 
@@ -99,42 +97,46 @@ documentation.
 
 ## 🏁 Intelligent Perception Tasks
 
-|                                      Camera-based  Object Recognition                                        |                                          Lane line recognition                                          |
+|                                      Camera-based  Object Recognition                                        |                                          Lane Line Recognition                                          |
 | :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
 | ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
 
-| Depth Estimation | Lidar-based object Recognition|
+| Depth Estimation | Lidar-based Object Recognition|
 | :-----------: | :-------: |
 | ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
 
-## 🏁 Adversarial attack Tasks
+## 🏁 Adversarial Attack Scenarios
 
-### 1.Pixel-based Digital attack
+### 1.Pixel-based Digital Attack
 
-|                                                                                Without Adversarial attack vs. With Adversarial attack                                                                                |
+|                                                                                Without Digital Attack vs. With Digital Attack                                                                                |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                               **Right turn hard**                                                                                               |
+|                                                                                               **Scenario: Right turn hard(选个场景跑)**                                                                                               |
 | ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
 
-### 2.Patch-based Digital attack
+### 2.Patch-based Digital/Physical Attack
 
-|                                                                                Without Adversarial attack vs. With Adversarial attack                                                                                |
+|                                                                                Without Digital Attack vs. With Digital Attack                                                                                |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                               **Right turn hard**                                                                                               |
+|                                                                                               **Scenario: Right turn hard(选个场景)**                                                                                               |
 | ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
 
-### 3.Camouflage-based physical attack
-
-|                                                                                Without Adversarial attack vs. With Adversarial attack                                                                                |
+|                                                                                Without Lane Line Attack vs. With Lane Line Attack                                                                                |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                               **Right turn hard**                                                                                               |
+|                                                                                               **Scenario: Right turn hard(选个场景)**                                                                                               |
+| ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
+### 3.Camouflage-based Physical Attack
+
+|                                                                                Without Camouflage Attack vs. With Camouflage Attack                                                                                |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|                                                                                               **Scenario: Right turn hard(选个场景)**                                                                                               |
 | ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
 
-### 4.Backdoor attack
+### 4.Backdoor Attack
 
-|                                                                                Without Adversarial attack vs. With Adversarial attack                                                                                |
+|                                                                                Without Backdoor Attack vs. With Backdoor Attack                                                                                |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                               **Right turn hard**                                                                                               |
+|                                                                                               **Scenario: Right turn hard(选个场景)**                                                                                               |
 | ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
 
 ## 🏁 Leaderboard of Driving Agents
@@ -183,7 +185,7 @@ documentation.
     </tr>
 </table>
 
-#### UniAD
+#### Transfuser
 |                                      Scenario Cut In                                          |                                          Scenario Sudden Pedestrian Crossing                                          |
 | :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
 | ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
