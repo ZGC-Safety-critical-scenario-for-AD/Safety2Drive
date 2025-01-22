@@ -38,9 +38,9 @@
 - The benchmark are in the standard OpenSCENARIO format, including 100 carefully designed standard regulatory scenarios for functional testing, 30 safety-critical scenarios, and 30 adversarial attack scenarios. Each of these 100 functional test items can be generalized to multiple scenarios. Theoretically, the benchmark contains an infinite number of scenarios.
 
 |            Subset            | Number | File List |
-| :---------------------------: | :----: | :-------: |
-| Functional Test |  70  | xosc file |
-|   safety-critical scenarios   |   30   | xosc file |
+| :--------------------------: | :----: | :-------: |
+|       Functional Test       |   70   | xosc file |
+|  safety-critical scenarios  |   30   | xosc file |
 | adversarial attack scenarios |   30   | xosc file |
 
 Note that the file in Repo contains 15 representative scenarios. You can contact us via email to get the full scenario file.
@@ -74,93 +74,97 @@ documentation.
 
 ---
 
-| Decelerating | Cut In | Cut Out Front | Pedestrian Crossing | Two Wheeler Riding |
-| :----------: | :---: | :---------: | :----------------: | :--------------: |
-| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Decelerating/Decelerating.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutIn/CutIn.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutOutFront/CutOutFront.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/PedestrianCrossing/PedestrianCrossing.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/TwoWheelerRiding/TwoWheelerRiding.gif" width="128" height="128"> |
-| BEV | BEV | BEV | BEV | BEV |
-| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Decelerating/Decelerating_Bev.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutIn/CutIn_Bev.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutOutFront/CutOutFront_Bev.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/PedestrianCrossing/PedestrianCrossing_Bev.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/TwoWheelerRiding/TwoWheelerRiding_Bev.gif" width="128" height="128"> |
+|                                                                            Decelerating                                                                            |                                                                        Cut In                                                                        |                                                                          Cut Out Front                                                                          |                                                                              Pedestrian Crossing                                                                              |                                                                             Two Wheeler Riding                                                                             |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|   `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Decelerating/Decelerating.gif" width="128" height="128">`   |   `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutIn/CutIn.gif" width="128" height="128">`   |   `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutOutFront/CutOutFront.gif" width="128" height="128">`   |   `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/PedestrianCrossing/PedestrianCrossing.gif" width="128" height="128">`   |   `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/TwoWheelerRiding/TwoWheelerRiding.gif" width="128" height="128">`   |
+|                                                                                BEV                                                                                |                                                                         BEV                                                                         |                                                                               BEV                                                                               |                                                                                      BEV                                                                                      |                                                                                    BEV                                                                                    |
+| `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Decelerating/Decelerating_Bev.gif" width="128" height="128">` | `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutIn/CutIn_Bev.gif" width="128" height="128">` | `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutOutFront/CutOutFront_Bev.gif" width="128" height="128">` | `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/PedestrianCrossing/PedestrianCrossing_Bev.gif" width="128" height="128">` | `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/TwoWheelerRiding/TwoWheelerRiding_Bev.gif" width="128" height="128">` |
 
 ### 16 types of environmental and weather: Fog, Rain, Midnight，Nightfall，Afternoon，Midday，Morning，Cloudless，Thick fog，Haze，Road surface water，Drizzle，Moderate rain，Heavy rain，Cloudy，Sunny.
 
 ---
 
-|                           Sunny                          |                           Rain                           |                          midnight                           |                           Fog                           |
-| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/SunnyDay.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/RainyDay.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/NightTime.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/FoggyDay.gif" width="128" height="128"> |
+|                                                                                  Sunny                                                                                  |                                                                                   Rain                                                                                   |                                                                                 midnight                                                                                 |                                                                                   Fog                                                                                   |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/SunnyDay.gif" width="128" height="128">` | `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/RainyDay.gif" width="128" height="128">` | `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/NightTime.gif" width="128" height="128">` | `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/FoggyDay.gif" width="128" height="128">` |
 
 ### Here are 5 safety-critical scenarios
 
 ---
 
-|                   Sudden Pedestrian Crossing                   |                       Opposing Lane Pass                       |                      Lane Change With Cone                      |                     Two wheeler Retrograde                     |
-| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Riskmigration/SuddenPedestrianCrossing.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Riskmigration/OpposingLanePass.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Riskmigration/LaneChangeWithCone.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Riskmigration/TwowheelerRetrograde.gif" width="128" height="128"> |
+|                                                                         Sudden Pedestrian Crossing                                                                         |                                                                         Opposing Lane Pass                                                                         |                                                                         Lane Change With Cone                                                                         |                                                                         Two wheeler Retrograde                                                                         |
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Riskmigration/SuddenPedestrianCrossing.gif" width="128" height="128">` | `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Riskmigration/OpposingLanePass.gif" width="128" height="128">` | `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Riskmigration/LaneChangeWithCone.gif" width="128" height="128">` | `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Riskmigration/TwowheelerRetrograde.gif" width="128" height="128">` |
 
 ## 🏁 Intelligent Perception Tasks
 
-|                                      Camera-based  Object Recognition                                        |                                          Lane Line Recognition                                          |
+|                               Camera-based  Object Recognition                               |                                    Lane Line Recognition                                    |
 | :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
 | ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
 
-| Depth Estimation | Lidar-based Object Recognition|
-| :-----------: | :-------: |
+|                                       Depth Estimation                                       |                               Lidar-based Object Recognition                               |
+| :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
 | ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
 
 ## 🏁 Adversarial Attack Scenarios
 
 ### 1.Pixel-based Digital Attack
 
-|                                                                                Without Digital Attack vs. With Digital Attack                                                                                |
+|                                                                                    Without Digital Attack vs. With Digital Attack                                                                                    |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                               **Scenario: Right turn hard(选个场景跑)**                                                                                               |
+|                                                                                    **Scenario: Right turn hard(选个场景跑)**                                                                                    |
 | ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
 
 ### 2.Patch-based Digital/Physical Attack
 
-|                                                                                Without Digital Attack vs. With Digital Attack                                                                                |
+|                                                                                    Without Digital Attack vs. With Digital Attack                                                                                    |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                               **Scenario: Right turn hard(选个场景)**                                                                                               |
+|                                                                                     **Scenario: Right turn hard(选个场景)**                                                                                     |
 | ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
 
-|                                                                                Without Lane Line Attack vs. With Lane Line Attack                                                                                |
+|                                                                                  Without Lane Line Attack vs. With Lane Line Attack                                                                                  |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                               **Scenario: Right turn hard(选个场景)**                                                                                               |
+|                                                                                     **Scenario: Right turn hard(选个场景)**                                                                                     |
 | ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
+
 ### 3.Camouflage-based Physical Attack
 
-|                                                                                Without Camouflage Attack vs. With Camouflage Attack                                                                                |
+|                                                                                 Without Camouflage Attack vs. With Camouflage Attack                                                                                 |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                               **Scenario: Right turn hard(选个场景)**                                                                                               |
+|                                                                                     **Scenario: Right turn hard(选个场景)**                                                                                     |
 | ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
 
 ### 4.Backdoor Attack
 
-|                                                                                Without Backdoor Attack vs. With Backdoor Attack                                                                                |
+|                                                                                   Without Backdoor Attack vs. With Backdoor Attack                                                                                   |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                               **Scenario: Right turn hard(选个场景)**                                                                                               |
+|                                                                                     **Scenario: Right turn hard(选个场景)**                                                                                     |
 | ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
 
 ## 🏁 Leaderboard of Driving Agents
 
 ### Closed-loop Evaluation Leaderboard
-#### Build your agent
-  - Add your agent to leaderboard/team_code/your_agent.py & Link your model folder under the Safety2Drive directory.
-    ```bash
-        Safety2Drive\ 
-          assets\
-          xosc_files\
-          leaderboard\
-            team_code\
-              --> Please add your agent HEAR
-          scenario_runner\
-          tools\
-          --> Please link your model folder HEAR
-    ```
-#### Autopilot
-|                                      Scenario Cut In                                          |                                          Scenario Sudden Pedestrian Crossing                                          |
-| :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
-| ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
 
+#### Build your agent
+
+- Add your agent to leaderboard/team_code/your_agent.py & Link your model folder under the Safety2Drive directory.
+  ```bash
+      Safety2Drive\ 
+        assets\
+        xosc_files\
+        leaderboard\
+          team_code\
+            --> Please add your agent HEAR
+        scenario_runner\
+        tools\
+        --> Please link your model folder HEAR
+  ```
+
+#### Autopilot
+
+|                                                                Lane Change With Cone                                                                |                                                          Scenario Sudden Pedestrian Crossing                                                          |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------: |
+| `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/auto_cone.gif" width="128" height="128">` | `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/auto_ghost.gif" width="128" height="128">` |
 
 <table>
     <tr style="background-color: #C7C7C7; color: white;">
@@ -187,10 +191,10 @@ documentation.
 </table>
 
 #### Transfuser
-|                                      Scenario Cut In                                          |                                          Scenario Sudden Pedestrian Crossing                                          |
-| :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
-| ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
 
+|                                                                   Lane Change With Cone                                                                   |                                                             Scenario Sudden Pedestrian Crossing                                                             |
+| :--------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/transfuser_cone.gif" width="128" height="128">` | `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/transfuser_ghost.gif" width="128" height="128">` |
 
 <table>
     <tr style="background-color: #C7C7C7; color: white;">
@@ -217,10 +221,10 @@ documentation.
 </table>
 
 #### Garage
-|                                      Scenario Cut In                                          |                                          Scenario Sudden Pedestrian Crossing                                          |
-| :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
-| ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
 
+|                                                          Scenario Sudden Pedestrian Crossing                                                          |                                                           Scenario Sudden Pedestrian Crossing                                                           |
+| :----------------------------------------------------------------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------------------------------------------------------------------: |
+| `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/garage_cone.gif" width="128" height="128">` | `<img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/garage_ghost.gif" width="128" height="128">` |
 
 <table>
     <tr style="background-color: #C7C7C7; color: white;">
@@ -250,11 +254,13 @@ documentation.
 
 - [X] Demo Website Release
 - [X] V1.0 Release
+
   - [X] Benchmark
   - [X] Perception Task
   - [X] Driving Agent Support
+- [ ] V1.1 Release
 
-- [ ]  V1.1 Release
   - [ ] Safety-Critical Scenario Generation algorithms
-- [ ]  V1.2 Release
+- [ ] V1.2 Release
+
   - [ ] LLM-based Scenario Generation algorithms
