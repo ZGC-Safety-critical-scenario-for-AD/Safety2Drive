@@ -157,7 +157,7 @@ documentation.
           --> Please link your model folder HEAR
     ```
 #### Autopilot
-|                                      Lane Change With Cone  In                                          |                                          Scenario Sudden Pedestrian Crossing                                          |
+|                                      Lane Change With Cone                                          |                                          Sudden Pedestrian Crossing                                          |
 | :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
 | ![Traffic Light](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/auto_cone.gif) | ![Stop Sign](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/auto_ghost.gif) |
 
@@ -187,7 +187,7 @@ documentation.
 </table>
 
 #### Transfuser
-|                                      Lane Change With Cone In                                          |                                          Scenario Sudden Pedestrian Crossing                                          |
+|                                      Lane Change With Cone                                          |                                          Sudden Pedestrian Crossing                                          |
 | :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
 | ![Traffic Light](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/transfuser_cone.gif) | ![Stop Sign](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/transfuser_ghost.gif) |
 
@@ -217,7 +217,7 @@ documentation.
 </table>
 
 #### Garage
-|                                      Lane Change With Cone                                           |                                          Scenario Sudden Pedestrian Crossing                                          |
+|                                      Lane Change With Cone                                           |                                           Sudden Pedestrian Crossing                                          |
 | :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
 | ![Traffic Light](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/garage_cone.gif) | ![Stop Sign](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/garage_ghost.gif) |
 
