@@ -171,17 +171,17 @@ documentation.
         <th>Driving Score</th>
     </tr>
     <tr>
-        <td>UniAD</td>
-        <td>Scenario 2</td>
-        <td>0.7615</td>
-        <td>0.1684</td>
-        <td>0.1684</td>
+        <td>AutoPolit</td>
+        <td>Cone</td>
+        <td>0.6725</td>
+        <td>0.1635</td>
+        <td>0.2275</td>
     </tr>
     <tr>
-        <td>UniAD</td>
-        <td>Scenario 3</td>
+        <td>AutoPolit</td>
+        <td>Ghost</td>
         <td>0.7215</td>
-        <td>0.169</td>
+        <td>0.1690</td>
         <td>0.0875</td>
     </tr>
 </table>
@@ -201,18 +201,18 @@ documentation.
         <th>Driving Score</th>
     </tr>
     <tr>
-        <td>UniAD</td>
-        <td>Scenario 2</td>
+        <td>Transfuser</td>
+        <td>Cone</td>
         <td>0.7615</td>
-        <td>0.1684</td>
+        <td>0.2364</td>
         <td>0.1684</td>
     </tr>
     <tr>
-        <td>UniAD</td>
-        <td>Scenario 3</td>
-        <td>0.7215</td>
-        <td>0.169</td>
-        <td>0.0875</td>
+        <td>Transfuser</td>
+        <td>Ghost</td>
+        <td>0.635</td>
+        <td>0.1375</td>
+        <td>0.1175</td>
     </tr>
 </table>
 
@@ -231,18 +231,18 @@ documentation.
         <th>Driving Score</th>
     </tr>
     <tr>
-        <td>UniAD</td>
-        <td>Scenario 2</td>
-        <td>0.7615</td>
-        <td>0.1684</td>
-        <td>0.1684</td>
+        <td>Garage</td>
+        <td>Cone</td>
+        <td>0.6435</td>
+        <td>0.1760</td>
+        <td>0.1785</td>
     </tr>
     <tr>
-        <td>UniAD</td>
-        <td>Scenario 3</td>
-        <td>0.7215</td>
-        <td>0.169</td>
-        <td>0.0875</td>
+        <td>Garage</td>
+        <td>Ghost</td>
+        <td>0.5760</td>
+        <td>0.1450</td>
+        <td>0.1575</td>
     </tr>
 </table>
 <!-- ROADMAP -->
