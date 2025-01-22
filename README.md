@@ -35,13 +35,13 @@
 
 ## 🌍 Introduction of the Safety2Drive
 
-- The benchmark are in the standard OpenSCENARIO format, including 100 carefully designed standard regulatory scenarios for functional testing, 30 safety-critical scenarios, and 30 adversarial attack scenarios. Each of these 100 functional test items can be generalized to multiple scenarios. Theoretically, this benchmark contains an infinite number of scenarios.
+- The benchmark are in the standard OpenSCENARIO format, including 100 carefully designed standard regulatory scenarios for functional testing, 30 safety-critical scenarios, and 30 adversarial attack scenarios. Each of these 100 functional test items can be generalized to multiple scenarios. Theoretically, the benchmark contains an infinite number of scenarios.
 
 |            Subset            | Number | File List |
 | :---------------------------: | :----: | :-------: |
-| Functional Test |  70  | xosc File |
-|   safety-critical scenarios   |   30   | xosc File |
-| adversarial attack scenarios |   30   | xosc File |
+| Functional Test |  70  | xosc file |
+|   safety-critical scenarios   |   30   | xosc file |
+| adversarial attack scenarios |   30   | xosc file |
 
 Note that the file in Repo contains 15 representative scenarios. You can contact us via email to get the full scenario file.
 
