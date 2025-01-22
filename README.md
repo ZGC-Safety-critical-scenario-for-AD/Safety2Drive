@@ -35,13 +35,13 @@
 
 ## 🌍 Introduction of the Safety2Drive
 
-- The dataset consists of files in the standard OpenSCENARIO format, including 100 carefully designed standard regulatory scenarios for functional testing, 30 safety-critical scenarios, and 30 adversarial attack scenarios.
+- The benchmark are in the standard OpenSCENARIO format, including 100 carefully designed standard regulatory scenarios for functional testing, 30 safety-critical scenarios, and 30 adversarial attack scenarios. Each of these 100 functional test items can be generalized to multiple scenarios. Theoretically, this benchmark contains an infinite number of scenarios.
 
 |            Subset            | Number | File List |
 | :---------------------------: | :----: | :-------: |
-| standard regulatory scenarios (functional test) |  100  | XOSC File |
-|   safety-critical scenarios   |   30   | XOSC File |
-| adversarial attack scenarios |   30   | XOSC File |
+| Functional Test |  70  | xosc File |
+|   safety-critical scenarios   |   30   | xosc File |
+| adversarial attack scenarios |   30   | xosc File |
 
 Note that the file in Repo contains 15 representative scenarios. You can contact us via email to get the full scenario file.
 
@@ -79,11 +79,11 @@ documentation.
 | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Decelerating/Decelerating.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutIn/CutIn.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutOutFront/CutOutFront.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/PedestrianCrossing/PedestrianCrossing.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/TwoWheelerRiding/TwoWheelerRiding.gif" width="128" height="128"> |
 | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Decelerating/Decelerating_Bev.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutIn/CutIn_Bev.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutOutFront/CutOutFront_Bev.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/PedestrianCrossing/PedestrianCrossing_Bev.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/TwoWheelerRiding/TwoWheelerRiding_Bev.gif" width="128" height="128"> |
 
-### Here are 4 types of environmental disturbance: sun, fog, rain, night.
+### 15 types of environmental disturbance: fog, rain, Midnight，Nightfall，Afternoon，Midday，Morning，Cloudless，Thick fog，Haze，Road surface water，Drizzle，Moderate rain，Heavy rain，Cloudy，Sunny.
 
 ---
 
-|                           Sun                          |                           Rain                           |                          Night                           |                           Fog                           |
+|                           Sunny                          |                           Rain                           |                          midnight                           |                           Fog                           |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/SunnyDay.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/RainyDay.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/NightTime.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/FoggyDay.gif" width="128" height="128"> |
 
