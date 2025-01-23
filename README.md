@@ -2,7 +2,10 @@
 
 ### 🆕 Updates
 
-- **`2025-01-06:`** We've launched the safety-critical scenario benchmark for autonomous driving! 🚗
+- **`2025-01-06:`** We've launched the safety-critical scenario benchmark for 
+
+
+autonomous driving! 🚗
 
 ---
 
@@ -136,7 +139,7 @@ documentation.
 
 |                                                                                Backdoor Attack                                                                                |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| <video controls=""><source id="mp4" src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/backdoor.mp4" type="video/mp4"></videos> |
+| <video src="https://github.com/user-attachments/assets/7ad519e1-aa9e-4c04-af37-20b230bb613a"></videos> |
 
 ## 🏁 Leaderboard of Driving Agents
 
