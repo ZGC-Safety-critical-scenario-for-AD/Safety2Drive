@@ -16,9 +16,9 @@ autonomous driving! 🚗
 - [🍃 Running the Autonomous Driving Scenario](#-Running-the-Autonomous-Driving-Scenario)
 - [🔧 Intelligent Perception Tasks](#-Intelligent-Perception-Tasks)
   - 1. Camera-based Object Recognition
-  - 2. Lane Line Recognition
+  - 2. Lidar-based Object Recognition
   - 3. Depth Estimation
-  - 4. Lidar-based Object Recognition
+  - 4. Lane Line Recognition
 - [⚡Adversarial Attack Scenarios](#-Adversarial-Attack-Scenarios)
   - 1. Pixel-based Digital Attacks
   - 2. Patch-based Digital/Physical Attacks
@@ -100,7 +100,7 @@ documentation.
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Riskmigration/SuddenPedestrianCrossing.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Riskmigration/OpposingLanePass.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Riskmigration/LaneChangeWithCone.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Riskmigration/TwowheelerRetrograde.gif" width="128" height="128"> |
 
-## 🏁 Intelligent Perception Tasks
+## 🔧 Intelligent Perception Tasks
 
 |                                      Camera-based  Object Recognition                                        |                                Lidar-based Object Recognition                                                  |
 | :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
@@ -110,7 +110,7 @@ documentation.
 | :-----------: | :-------: |
 | <video src="https://github.com/user-attachments/assets/2ef86c61-b8f3-46d3-9e92-8f3e6b246d42"></videos>  | <video src="https://github.com/user-attachments/assets/926d937a-41c4-4399-b289-72d5aa788ede"></videos>  |
 
-## 🏁 Adversarial Attack Scenarios
+## ⚡ Adversarial Attack Scenarios
 ### 1.Pixel-based Digital Attack
 
 |                                                                                Without Digital Attack vs. With Digital Attack                                                                                |
