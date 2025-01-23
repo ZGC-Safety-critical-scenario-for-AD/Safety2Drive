@@ -136,7 +136,7 @@ documentation.
 
 |                                                                                Backdoor Attack                                                                                |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| ![Traffic Light](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/backdoor.mp4) |
+| ![Backdoor](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/backdoor.mp4) |
 
 ## 🏁 Leaderboard of Driving Agents
 
