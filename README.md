@@ -101,13 +101,13 @@ documentation.
 
 ## 🏁 Intelligent Perception Tasks
 
-|                                      Camera-based  Object Recognition                                        |                                          Lane Line Recognition                                          |
+|                                      Camera-based  Object Recognition                                        |                                Lidar-based Object Recognition                                                  |
 | :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
-| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Perception/object_detection.png" width="256" height="256"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Perception/line.mp4" width="256" height="256">  |
+| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Perception/object_detection.png" width="256" height="256"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Perception/lidar.jpg" width="256" height="256">  |
 
-| Depth Estimation | Lidar-based Object Recognition|
+| Depth Estimation |Lane Line Recognition   |
 | :-----------: | :-------: |
-| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Perception/depth.mp4" width="256" height="256"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Perception/lidar.jpg" width="256" height="256"> |
+| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Perception/depth.mp4" width="256" height="256"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Perception/line.mp4" width="256" height="256"> |
 
 ## 🏁 Adversarial Attack Scenarios
 ### 1.Pixel-based Digital Attack
