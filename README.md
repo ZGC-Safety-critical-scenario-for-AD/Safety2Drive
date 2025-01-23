@@ -36,6 +36,7 @@ autonomous driving! 🚗
 
 <!-- Introduction -->
 
+
 ## 🌍 Introduction of the Safety2Drive
 
 - The benchmark are in the standard OpenSCENARIO format, including 100 carefully designed standard regulatory scenarios for functional testing, 30 safety-critical scenarios, and 30 adversarial attack scenarios. Each of these 100 functional test items can be generalized to multiple scenarios. Theoretically, the benchmark contains an infinite number of scenarios.
@@ -107,7 +108,7 @@ documentation.
 
 | Depth Estimation |Lane Line Recognition   |
 | :-----------: | :-------: |
-| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Perception/depth.mp4" width="256" height="256"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Perception/line.mp4" width="256" height="256"> |
+| <video src="https://github.com/user-attachments/assets/2ef86c61-b8f3-46d3-9e92-8f3e6b246d42"></videos>  | <video src="https://github.com/user-attachments/assets/926d937a-41c4-4399-b289-72d5aa788ede"></videos>  |
 
 ## 🏁 Adversarial Attack Scenarios
 ### 1.Pixel-based Digital Attack
@@ -148,8 +149,7 @@ documentation.
   - Add your agent to leaderboard/team_code/your_agent.py & Link your model folder under the Safety2Drive directory.
     ```bash
         Safety2Drive\ 
-          assets\
-          xosc_files\
+          scenes\
           leaderboard\
             team_code\
               --> Please add your agent HEAR
