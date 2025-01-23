@@ -100,11 +100,11 @@ documentation.
 
 |                                      Camera-based  Object Recognition                                        |                                          Lane Line Recognition                                          |
 | :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
-| ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
+| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Perception/object_detection.png" width="256" height="256"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Perception/line.mp4" width="256" height="256">  |
 
 | Depth Estimation | Lidar-based Object Recognition|
 | :-----------: | :-------: |
-| ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
+| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Perception/depth.mp4" width="256" height="256"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Perception/lidar.jpg" width="256" height="256"> |
 
 ## 🏁 Adversarial Attack Scenarios
 ### 1.Pixel-based Digital Attack
@@ -124,8 +124,8 @@ documentation.
 
 |                                                                                Without Lane Line Attack vs. With Lane Line Attack                                                                                |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                               **Scenario: Right turn hard(选个场景)**                                                                                               |
-| ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
+| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/before_line.png" width="256" height="256">  <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/after_line.png" width="256" height="256"> |
+
 ### 3.Camouflage-based Physical Attack
 
 |                                                                                Without Camouflage Attack vs. With Camouflage Attack                                                                                |
@@ -136,7 +136,7 @@ documentation.
 
 |                                                                                Backdoor Attack                                                                                |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/backdoor.png" width="256" height="256"> |
+| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/backdoor.mp4" width="256" height="256"> |
 ## 🏁 Leaderboard of Driving Agents
 
 ### Closed-loop Evaluation Leaderboard
