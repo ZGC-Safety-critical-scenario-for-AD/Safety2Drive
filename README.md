@@ -163,23 +163,23 @@ documentation.
     <tr style="background-color: #C7C7C7; color: white;">
         <th>Driving Agent</th>
         <th>Scenarios</th>
-        <th>Collision Rate</th>
-        <th>Incomplete Route</th>
+        <th>Collision</th>
+        <th>Complete Route</th>
         <th>Driving Score</th>
     </tr>
     <tr>
         <td>AutoPolit</td>
         <td>Cone</td>
-        <td>0.6725</td>
-        <td>0.1635</td>
-        <td>0.2275</td>
+        <td>True</td>
+        <td>False</td>
+        <td>0.2746</td>
     </tr>
     <tr>
         <td>AutoPolit</td>
         <td>Ghost</td>
-        <td>0.7215</td>
-        <td>0.1690</td>
-        <td>0.0875</td>
+        <td>False</td>
+        <td>True</td>
+        <td>1.0</td>
     </tr>
 </table>
 
@@ -193,23 +193,23 @@ documentation.
     <tr style="background-color: #C7C7C7; color: white;">
         <th>Driving Agent</th>
         <th>Scenarios</th>
-        <th>Collision Rate</th>
-        <th>Incomplete Route</th>
+        <th>Collision</th>
+        <th>Complete Route</th>
         <th>Driving Score</th>
     </tr>
     <tr>
         <td>Transfuser</td>
         <td>Cone</td>
-        <td>0.7615</td>
-        <td>0.2364</td>
-        <td>0.1684</td>
+        <td>True</td>
+        <td>False</td>
+        <td>0.1785</td>
     </tr>
     <tr>
         <td>Transfuser</td>
         <td>Ghost</td>
-        <td>0.635</td>
-        <td>0.1375</td>
-        <td>0.1175</td>
+        <td>False</td>
+        <td>True</td>
+        <td>1.0</td>
     </tr>
 </table>
 
@@ -223,23 +223,23 @@ documentation.
     <tr style="background-color: #C7C7C7; color: white;">
         <th>Driving Agent</th>
         <th>Scenarios</th>
-        <th>Collision Rate</th>
-        <th>Incomplete Route</th>
+        <th>Collision</th>
+        <th>Complete Route</th>
         <th>Driving Score</th>
     </tr>
     <tr>
         <td>Garage</td>
         <td>Cone</td>
-        <td>0.6435</td>
-        <td>0.1760</td>
-        <td>0.1785</td>
+        <td>True</td>
+        <td>False</td>
+        <td>0.4225</td>
     </tr>
     <tr>
         <td>Garage</td>
         <td>Ghost</td>
-        <td>0.5760</td>
-        <td>0.1450</td>
-        <td>0.1575</td>
+        <td>False</td>
+        <td>True</td>
+        <td>1.0</td>
     </tr>
 </table>
 <!-- ROADMAP -->
