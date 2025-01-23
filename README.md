@@ -39,7 +39,7 @@ autonomous driving! 🚗
 
 ## 🌍 Introduction of the Safety2Drive
 
-- The benchmark are in the standard OpenSCENARIO format, including 100 carefully designed standard regulatory scenarios for functional testing, 30 safety-critical scenarios, and 30 adversarial attack scenarios. Each of these 100 functional test items can be generalized to multiple scenarios. Theoretically, the benchmark contains an infinite number of scenarios.
+- The benchmark are in the standard OpenSCENARIO format, including 100 carefully designed standard regulatory scenarios for functional testing, 30 safety-critical scenarios, and support for 30 adversarial attack algorithms. Each of these 100 functional test items can be generalized to multiple scenarios. Theoretically, the benchmark contains an infinite number of scenarios.
 
 |            Subset            | Number | File List |
 | :---------------------------: | :----: | :-------: |
@@ -92,7 +92,7 @@ documentation.
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/SunnyDay.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/RainyDay.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/NightTime.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/FoggyDay.gif" width="128" height="128"> |
 
-### Here are 5 safety-critical scenarios
+### Here are 4 safety-critical scenarios
 
 ---
 
