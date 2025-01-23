@@ -136,7 +136,7 @@ documentation.
 
 |                                                                                Backdoor Attack                                                                                |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| <video controls=""><source id="mp4" src="/gif_files/Adversarial_Attack/backdoor.mp4" type="video/mp4"></videos>|
+| <video controls=""><source id="mp4" src="/gif_files/Adversarial_Attack/backdoor.mp4"type="video/mp4"></videos>|
 
 ## 🏁 Leaderboard of Driving Agents
 
