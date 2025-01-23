@@ -107,20 +107,20 @@ documentation.
 | ![Traffic Light](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/tl_right.gif) | ![Stop Sign](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/stop%20sign.gif) |
 
 ## 🏁 Adversarial Attack Scenarios
-
 ### 1.Pixel-based Digital Attack
 
 |                                                                                Without Digital Attack vs. With Digital Attack                                                                                |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                               **Scenario: Right turn hard(选个场景跑)**                                                                                               |
-| ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
+|                                                                                               **Without Digital Attack**                                                                                               |
+| ![Right turn hard FOV](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/before_digital_attack.jpg)|
+**PGD Digital Attack** 
+|![Right turn hard FOV](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/after_digital_attack.jpg) |
 
 ### 2.Patch-based Digital/Physical Attack
 
 |                                                                                Without Digital Attack vs. With Digital Attack                                                                                |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                               **Scenario: Right turn hard(选个场景)**                                                                                               |
-| ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
+| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/before_patch.png" width="256" height="256">  <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/after_patch.jpg" width="256" height="256">|
 
 |                                                                                Without Lane Line Attack vs. With Lane Line Attack                                                                                |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
@@ -130,16 +130,13 @@ documentation.
 
 |                                                                                Without Camouflage Attack vs. With Camouflage Attack                                                                                |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                               **Scenario: Right turn hard(选个场景)**                                                                                               |
-| ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
+| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/before_p_attack.png" width="256" height="256">  <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/after_p_attack.png" width="256" height="256"> |
 
 ### 4.Backdoor Attack
 
-|                                                                                Without Backdoor Attack vs. With Backdoor Attack                                                                                |
+|                                                                                Backdoor Attack                                                                                |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                                                               **Scenario: Right turn hard(选个场景)**                                                                                               |
-| ![Right turn hard](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_hard.gif)     ![Right turn hard FOV](https://ucd-dare.github.io/cardreamer.github.io/static/gifs/bev/right_turn_fov.gif) |
-
+| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/backdoor.png" width="256" height="256"> |
 ## 🏁 Leaderboard of Driving Agents
 
 ### Closed-loop Evaluation Leaderboard
