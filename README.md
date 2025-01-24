@@ -39,7 +39,7 @@ autonomous driving! 🚗
 
 ## 🌍 Introduction of the Safety2Drive
 
-- The benchmark are in the standard OpenSCENARIO format, including 100 carefully designed standard regulatory scenarios for functional testing, 30 safety-critical scenarios, and support for 30 adversarial attack algorithms. Each of these 100 functional test items can be generalized to multiple scenarios. Theoretically, the benchmark contains an infinite number of scenarios.
+- The benchmark are in the standard OpenSCENARIO format, including 70 carefully designed standard regulatory scenarios for functional testing, 30 safety-critical scenarios, and support for 30 adversarial attack algorithms. Each of these 100 functional test items can be generalized to multiple scenarios. Theoretically, the benchmark contains an infinite number of scenarios.
 
 |            Subset            | Number | File List |
 | :---------------------------: | :----: | :-------: |
@@ -122,7 +122,7 @@ documentation.
 
 ### 2.Patch-based Digital/Physical Attack
 
-|                                                                                Without Digital Attack vs. With Digital Attack                                                                                |
+|                                                                                Without Patch Attack vs. With Patch Attack                                                                                |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/before_patch.png" width="256" height="256">  <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/after_patch.jpg" width="256" height="256">|
 
@@ -172,14 +172,14 @@ documentation.
         <th>Driving Score</th>
     </tr>
     <tr>
-        <td>AutoPolit</td>
+        <td>Autopilot</td>
         <td>Cone</td>
         <td>True</td>
         <td>False</td>
         <td>0.2746</td>
     </tr>
     <tr>
-        <td>AutoPolit</td>
+        <td>Autopilot</td>
         <td>Ghost</td>
         <td>False</td>
         <td>True</td>
