@@ -120,7 +120,7 @@ documentation.
 **PGD Digital Attack** 
 |![Right turn hard FOV](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/after_digital_attack.jpg) |
 
-| Perception task | Digital Attack | Map   |  Straight Obstacle | Turning Obstacle | Lane Changing | Vehicle Passing | Red-light Running | Unprotected Left-turn | Right-turn | Dynamic Object Crossing |Avg.|
+| Perception Alg | Digital Attack | Metric   |  Straight Obstacle | Turning Obstacle | Lane Changing | Vehicle Passing | Red-light Running | Unprotected Left-turn | Right-turn | Dynamic Object Crossing |Avg.|
 | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
 | YoloV5 |PGD |Begine      | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
 | YoloV5 |PGD|Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
