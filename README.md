@@ -120,28 +120,26 @@ documentation.
 **PGD Digital Attack** 
 |![Right turn hard FOV](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/after_digital_attack.jpg) |
 
-| Digital Attack Algo | Digital Attack Algo.   | | Avg. Straight Obstacle | Turning Obstacle | Lane Changing | Vehicle Passing | Red-light Running | Unprotected Left-turn | Right-turn | Dynamic Object Crossing |
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| YoloV5 |PGD Begine      | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| YoloV5 |mAP             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| YoloV5 |FGSM Begine     | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| YoloV5 |mAP             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Pointpillor |PGD Begine | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Pointpillor |mAP        | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Pointpillor |FGSM Begine| -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Pointpillor |mAP        | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Lane Line |PGD Begine   | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Lane Line |mAP          | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Lane Line |FGSM Begine  | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Lane Line |mAP          | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-
-
-
-| Digital Attack Algo.   | Safety2Drive (合并列)          |
-|------------------------|----------------------------------|
-|                        | Avg. Straight Obstacle | Turning Obstacle | ... |
-| YoloV5 PGD Begine      | -                      | -                | ... |
-
+| Perception task | Digital Attack | Map   | | Avg. Straight Obstacle | Turning Obstacle | Lane Changing | Vehicle Passing | Red-light Running | Unprotected Left-turn | Right-turn | Dynamic Object Crossing |
+| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
+| YoloV5 |PGD |Begine      | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
+| YoloV5 |PGD|Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
+| YoloV5 |FGSM |Begine     | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
+| YoloV5 |FGSM| Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
+| YoloV5 |C W |Begine     | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
+| YoloV5 |C W| Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
+| Pointpillor |PGD |Begine      | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
+| Pointpillor |PGD|Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
+| Pointpillor |FGSM |Begine     | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
+| Pointpillor |FGSM| Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
+| Pointpillor |C W |Begine     | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
+| Pointpillor |C W| Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
+| Lane Line |PGD |Begine      | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
+| Lane Line |PGD|Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
+| Lane Line |FGSM |Begine     | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
+| Lane Line |FGSM| Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
+| Lane Line |C W |Begine     | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
+| Lane Line |C W| Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
 
 ### 2.Patch-based Digital/Physical Attack
 
