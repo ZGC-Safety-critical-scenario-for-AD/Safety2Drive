@@ -137,6 +137,12 @@ documentation.
 
 
 
+| Digital Attack Algo.   | Safety2Drive (合并列)          |
+|------------------------|----------------------------------|
+|                        | Avg. Straight Obstacle | Turning Obstacle | ... |
+| YoloV5 PGD Begine      | -                      | -                | ... |
+
+
 ### 2.Patch-based Digital/Physical Attack
 
 |                                                                                Without Patch Attack vs. With Patch Attack                                                                                |
