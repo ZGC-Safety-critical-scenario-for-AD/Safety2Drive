@@ -1,0 +1,373 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<OpenSCENARIO>
+	<FileHeader revMajor="1" revMinor="0" date="2024-05-29T17:51:54" description="scenario_20240529_鬼探头" author="oasis" />
+	<CatalogLocations />
+	<RoadNetwork>
+		<LogicFile filepath="Town10HD" />
+	</RoadNetwork>
+	<Entities>
+		<ScenarioObject name="hero">
+            <Vehicle name="vehicle.tesla.model3" vehicleCategory="car">
+                <ParameterDeclarations/>
+                <Performance maxSpeed="69.444" maxAcceleration="200" maxDeceleration="10.0"/>
+                <BoundingBox>
+                    <Center x="1.5" y="0.0" z="0.9"/>
+                    <Dimensions width="2.1" length="4.5" height="1.8"/>
+                </BoundingBox>
+                <Axles>
+                    <FrontAxle maxSteering="0.5" wheelDiameter="0.6" trackWidth="1.8" positionX="3.1" positionZ="0.3"/>
+                    <RearAxle maxSteering="0.0" wheelDiameter="0.6" trackWidth="1.8" positionX="0.0" positionZ="0.3"/>
+                </Axles>
+                <Properties>
+                    <Property name="type" value="ego_vehicle"/>
+                </Properties>
+            </Vehicle>
+        </ScenarioObject>
+		<ScenarioObject name="pedestrian_001">
+			<Pedestrian name="walker.pedestrian.0002" model="walker.pedestrian.0002" mass="65" pedestrianCategory="pedestrian">
+				<BoundingBox>
+					<Center x="0.275" y="0.125" z="0.85" />
+					<Dimensions width="0.55" length="0.25" height="1.7" />
+				</BoundingBox>
+				<Properties>
+					<Property name="type" value="simulation" />
+				</Properties>
+			</Pedestrian>
+		</ScenarioObject>
+		<ScenarioObject name="vehicle_001">
+			<Vehicle name="vehicle.ford.crown" vehicleCategory="car">
+				<BoundingBox>
+					<Center x="1.5" y="0" z="0.78" />
+					<Dimensions width="2.04" length="4.98" height="1.56" />
+				</BoundingBox>
+				<Performance maxSpeed="63" maxAcceleration="4.7" maxDeceleration="8" />
+				<Axles>
+					<FrontAxle maxSteering="1.22" wheelDiameter="0.74" trackWidth="2.04" positionX="3.0" positionZ="0.37" />
+					<RearAxle maxSteering="1.22" wheelDiameter="0.74" trackWidth="2.04" positionX="3.0" positionZ="0.37" />
+				</Axles>
+				<Properties>
+					<Property name="type" value="simulation" />
+				</Properties>
+			</Vehicle>
+		</ScenarioObject>
+	</Entities>
+	<Storyboard>
+		<Init>
+			<Actions>
+				<GlobalAction>
+					<EnvironmentAction>
+						<Environment name="Environment1">
+							<TimeOfDay animation="true" dateTime="2020-09-23T07:20:00" />
+							<Weather cloudState="free">
+								<Sun intensity="50000.0" azimuth="2.792526803190927" elevation="0.3490658503988659" />
+								<Fog visualRange="10000" />
+								<Precipitation precipitationType="dry" intensity="0" />
+							</Weather>
+							<RoadCondition frictionScaleFactor="1.0" />
+						</Environment>
+					</EnvironmentAction>
+				</GlobalAction>
+				<Private entityRef="hero">
+					<PrivateAction>
+						<ControllerAction>
+							<AssignControllerAction>
+								<Controller name="HeroAgent">
+									<Properties>
+										<Property name="module" value="simple_vehicle_control" />
+									</Properties>
+								</Controller>
+							</AssignControllerAction>
+							<OverrideControllerValueAction>
+								<Throttle value="0" active="false" />
+								<Brake value="0" active="false" />
+								<Clutch value="0" active="false" />
+								<ParkingBrake value="0" active="false" />
+								<SteeringWheel value="0" active="false" />
+								<Gear number="0" active="false" />
+							</OverrideControllerValueAction>
+						</ControllerAction>
+					</PrivateAction>
+					<PrivateAction>
+						<LongitudinalAction>
+							<SpeedAction>
+								<SpeedActionDynamics dynamicsShape="step" value="0" dynamicsDimension="time" />
+								<SpeedActionTarget>
+									<AbsoluteTargetSpeed value="3" />
+								</SpeedActionTarget>
+							</SpeedAction>
+						</LongitudinalAction>
+					</PrivateAction>
+					<PrivateAction>
+						<TeleportAction>
+							<Position>
+								<WorldPosition x="-66.04" y="-136.899" z="0" h="6.277041748212566" p="0.0" r="0.0" />
+							</Position>
+						</TeleportAction>
+					</PrivateAction>
+				</Private>
+				<Private entityRef="pedestrian_001">
+					<PrivateAction>
+						<LongitudinalAction>
+							<SpeedAction>
+								<SpeedActionDynamics dynamicsShape="step" value="0" dynamicsDimension="time" />
+								<SpeedActionTarget>
+									<AbsoluteTargetSpeed value="0" />
+								</SpeedActionTarget>
+							</SpeedAction>
+						</LongitudinalAction>
+					</PrivateAction>
+					<PrivateAction>
+						<TeleportAction>
+							<Position>
+								<WorldPosition x="-25.432" y="-141.186" z="0" h="6.268751434265593" p="0.0" r="0.0" />
+							</Position>
+						</TeleportAction>
+					</PrivateAction>
+				</Private>
+				<Private entityRef="vehicle_001">
+					<PrivateAction>
+						<LongitudinalAction>
+							<SpeedAction>
+								<SpeedActionDynamics dynamicsShape="step" value="0" dynamicsDimension="time" />
+								<SpeedActionTarget>
+									<AbsoluteTargetSpeed value="0" />
+								</SpeedActionTarget>
+							</SpeedAction>
+						</LongitudinalAction>
+					</PrivateAction>
+					<PrivateAction>
+						<TeleportAction>
+							<Position>
+								<WorldPosition x="-30.725" y="-140.857" z="0" h="6.276919575164927" p="0.0" r="0.0" />
+							</Position>
+						</TeleportAction>
+					</PrivateAction>
+				</Private>
+			</Actions>
+		</Init>
+		<Story name="MyStory">
+			<Act name="Act1">
+				<ManeuverGroup maximumExecutionCount="1" name="ManeuverGroup1">
+					<Actors selectTriggeringEntities="false">
+						<EntityRef entityRef="hero" />
+					</Actors>
+					<Maneuver name="Maneuver1">
+						<Event name="E1ofActorego_vehicle" priority="parallel">
+							<Action name="A1ofE1ofActorego_vehicle">
+								<PrivateAction>
+									<RoutingAction>
+										<AssignRouteAction>
+											<Route closed="false" name="route">
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="-43.7" y="-136.899"  />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="-30.2" y="-136.899" />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="-12.5" y="-136.899" />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="18.8" y="-136.899" />
+													</Position>
+												</Waypoint>
+											</Route>
+										</AssignRouteAction>
+									</RoutingAction>
+								</PrivateAction>
+							</Action>
+							<StartTrigger>
+								<ConditionGroup>
+									<Condition name="C1ofCG1ofE1ofActorego_vehicle" delay="0" conditionEdge="rising">
+										<ByValueCondition>
+											<SimulationTimeCondition value="0" rule="greaterThan" />
+										</ByValueCondition>
+									</Condition>
+								</ConditionGroup>
+							</StartTrigger>
+						</Event>
+					</Maneuver>
+				</ManeuverGroup>
+
+				<ManeuverGroup maximumExecutionCount="1" name="ManeuverGroup2">
+					<Actors selectTriggeringEntities="false">
+						<EntityRef entityRef="pedestrian_001" />
+					</Actors>
+					<Maneuver name="Maneuver1">
+						<Event name="E1ofActorpedestrian_001" priority="parallel">
+							<Action name="A1ofE1ofActorpedestrian_001">
+								<PrivateAction>
+									<LongitudinalAction>
+										<SpeedAction>
+											<SpeedActionDynamics dynamicsShape="linear" value="3" dynamicsDimension="time" />
+											<SpeedActionTarget>
+												<AbsoluteTargetSpeed value="2" />
+											</SpeedActionTarget>
+										</SpeedAction>
+									</LongitudinalAction>
+								</PrivateAction>
+							</Action>
+							<Action name="A2ofE1ofActorpedestrian_001">
+								<PrivateAction>
+									<RoutingAction>
+										<AssignRouteAction>
+											<Route closed="false" name="route_001">
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="-25.712" y="-141.079" z="0" h="0.0" p="0.0" r="0.0" />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="-25.309" y="-122.665" z="0" h="0.0" p="0.0" r="0.0" />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="-53.724" y="-122.396" z="0" h="0.0" p="0.0" r="0.0" />
+													</Position>
+												</Waypoint>
+											</Route>
+										</AssignRouteAction>
+									</RoutingAction>
+								</PrivateAction>
+							</Action>
+							<StartTrigger>
+								<ConditionGroup>
+									<Condition name="C1ofCG1ofE1ofActorpedestrian_001" delay="0" conditionEdge="rising">
+										<ByEntityCondition>
+											<TriggeringEntities triggeringEntitiesRule="any">
+												<EntityRef entityRef="pedestrian_001" />
+											</TriggeringEntities>
+											<EntityCondition>
+												<RelativeDistanceCondition entityRef="hero" relativeDistanceType="cartesianDistance" value="20" freespace="false" rule="lessThan" />
+											</EntityCondition>
+										</ByEntityCondition>
+									</Condition>
+								</ConditionGroup>
+							</StartTrigger>
+						</Event>
+					</Maneuver>
+				</ManeuverGroup>
+				<StartTrigger>
+					<ConditionGroup>
+						<Condition name="ActStartCondition" delay="0" conditionEdge="rising">
+							<ByValueCondition>
+								<SimulationTimeCondition value="0" rule="greaterThan" />
+							</ByValueCondition>
+						</Condition>
+					</ConditionGroup>
+				</StartTrigger>
+				<StopTrigger>
+					<ConditionGroup>
+						<Condition name="timeout" delay="0" conditionEdge="rising">
+							<ByValueCondition>
+								<SimulationTimeCondition value="120" rule="greaterThan" />
+							</ByValueCondition>
+						</Condition>
+					</ConditionGroup>
+					<ConditionGroup>
+						<Condition name="collision_vehicle" delay="0" conditionEdge="rising">
+							<ByEntityCondition>
+								<TriggeringEntities triggeringEntitiesRule="any">
+									<EntityRef entityRef="hero" />
+								</TriggeringEntities>
+								<EntityCondition>
+									<CollisionCondition>
+										<ByType type="vehicle" />
+									</CollisionCondition>
+								</EntityCondition>
+							</ByEntityCondition>
+						</Condition>
+					</ConditionGroup>
+					<ConditionGroup>
+						<Condition name="collision_pedestrian" delay="0" conditionEdge="rising">
+							<ByEntityCondition>
+								<TriggeringEntities triggeringEntitiesRule="any">
+									<EntityRef entityRef="hero" />
+								</TriggeringEntities>
+								<EntityCondition>
+									<CollisionCondition>
+										<ByType type="pedestrian" />
+									</CollisionCondition>
+								</EntityCondition>
+							</ByEntityCondition>
+						</Condition>
+					</ConditionGroup>
+					<ConditionGroup>
+						<Condition name="collision_misobject" delay="0" conditionEdge="rising">
+							<ByEntityCondition>
+								<TriggeringEntities triggeringEntitiesRule="any">
+									<EntityRef entityRef="hero" />
+								</TriggeringEntities>
+								<EntityCondition>
+									<CollisionCondition>
+										<ByType type="miscellaneous" />
+									</CollisionCondition>
+								</EntityCondition>
+							</ByEntityCondition>
+						</Condition>
+					</ConditionGroup>
+					<ConditionGroup>
+						<Condition name="EndCondition" delay="0" conditionEdge="rising">
+							<ByEntityCondition>
+								<TriggeringEntities triggeringEntitiesRule="any">
+									<EntityRef entityRef="hero"/>
+								</TriggeringEntities>
+								<EntityCondition>
+									<TraveledDistanceCondition value="100.0"/>
+								</EntityCondition>
+							</ByEntityCondition>
+						</Condition>
+					</ConditionGroup>
+				</StopTrigger>
+			</Act>
+		</Story>
+		<StopTrigger>
+      <ConditionGroup>
+        <Condition name="criteria_RunningStopTest" delay="0" conditionEdge="rising">
+          <ByValueCondition>
+            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
+          </ByValueCondition>
+        </Condition>
+        <Condition name="criteria_RunningRedLightTest" delay="0" conditionEdge="rising">
+          <ByValueCondition>
+            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
+          </ByValueCondition>
+        </Condition>
+        <Condition name="criteria_WrongLaneTest" delay="0" conditionEdge="rising">
+          <ByValueCondition>
+            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
+          </ByValueCondition>
+        </Condition>
+        <Condition name="criteria_OnSidewalkTest" delay="0" conditionEdge="rising">
+          <ByValueCondition>
+            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
+          </ByValueCondition>
+        </Condition>
+        <Condition name="criteria_KeepLaneTest" delay="0" conditionEdge="rising">
+          <ByValueCondition>
+            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
+          </ByValueCondition>
+        </Condition>
+        <Condition name="criteria_CollisionTest" delay="0" conditionEdge="rising">
+          <ByValueCondition>
+            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
+          </ByValueCondition>
+        </Condition>
+        <Condition name="criteria_DrivenDistanceTest" delay="0" conditionEdge="rising">
+          <ByValueCondition>
+            <ParameterCondition parameterRef="distance_success" value="60" rule="lessThan"/>
+          </ByValueCondition>
+        </Condition>
+      </ConditionGroup>
+    </StopTrigger>
+	</Storyboard>
+</OpenSCENARIO>
