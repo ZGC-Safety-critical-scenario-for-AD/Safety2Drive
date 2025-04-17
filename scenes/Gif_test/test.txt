@@ -1,0 +1,6 @@
+export CARLA_ROOT=/home/amin/carla
+export PYTHONPATH=$PYTHONPATH:${CARLA_ROOT}/PythonAPI/carla/dist/carla-0.9.15-py3.8-linux-x86_64.egg
+export SCENARIO_RUNNER_ROOT=/mnt/data/carla_safebench/scenario_runner
+(base) amin@amin-ThinkStation-P3-Tower:/mnt/data/carla$ ./CarlaUE4.sh
+
+(carla) amin@amin-ThinkStation-P3-Tower:/mnt/data/simulator/scenario_util/op_carla_local/op_bridge/leaderboard$ bash ./run_leader.sh
