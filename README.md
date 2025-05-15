@@ -120,27 +120,6 @@ documentation.
 **PGD Digital Attack** 
 |![Right turn hard FOV](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Adversarial_Attack/after_digital_attack.jpg) |
 
-| Perception Alg | Digital Attack | Metric   |  Straight Obstacle | Turning Obstacle | Lane Changing | Vehicle Passing | Red-light Running | Unprotected Left-turn | Right-turn | Dynamic Object Crossing |Avg.|
-| :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: | :--: |
-| YoloV5 |PGD |Begine      | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| YoloV5 |PGD|Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| YoloV5 |FGSM |Begine     | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| YoloV5 |FGSM| Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| YoloV5 |C&W |Begine     | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| YoloV5 |C&W| Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Pointpillor |PGD |Begine      | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Pointpillor |PGD|Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Pointpillor |FGSM |Begine     | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Pointpillor |FGSM| Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Pointpillor |C&W|Begine     | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Pointpillor |C&W| Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Lane Line(add your algorithm name) |PGD |Begine      | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Lane Line |PGD|Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Lane Line |FGSM |Begine     | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Lane Line |FGSM| Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Lane Line |C&W|Begine     | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-| Lane Line |C&W| Attack             | -          | -                     | -                | -             | -                 | -                   | -                     | -          | -                       |
-
 ### 2.Patch-based Digital/Physical Attack
 
 |                                                                                Without Patch Attack vs. With Patch Attack                                                                                |
