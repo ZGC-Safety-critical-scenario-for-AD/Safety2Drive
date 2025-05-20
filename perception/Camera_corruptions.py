@@ -1,5 +1,5 @@
 import sys
-sys.path.append('/data1/wtc/lidar_vehicle_detection/corruptions_utils')
+sys.path.append('./lidar_vehicle_detection/corruptions_utils')
 
 
 import corruptions_utils.imgaug.augmenters as iaa

@@ -25,7 +25,7 @@ import imageio
 # ==============================================================================
 
 try:
-    sys.path.append(glob.glob('/home/sm6/CARLA_0.9.15/PythonAPI/carla/dist/carla-*%d.%d-%s.egg' % (
+    sys.path.append(glob.glob('you carla address/CARLA_0.9.15/PythonAPI/carla/dist/carla-*%d.%d-%s.egg' % (
         sys.version_info.major,
         sys.version_info.minor,
         'win-amd64' if os.name == 'nt' else 'linux-x86_64'))[0])
