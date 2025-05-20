@@ -84,7 +84,7 @@ documentation.
 | BEV | BEV | BEV | BEV | BEV |
 | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Decelerating/Decelerating_Bev.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutIn/CutIn_Bev.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/CutOutFront/CutOutFront_Bev.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/PedestrianCrossing/PedestrianCrossing_Bev.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/TwoWheelerRiding/TwoWheelerRiding_Bev.gif" width="128" height="128"> |
 
-### 16 types of environmental and weather: Fog, Rain, Midnight，Nightfall，Afternoon，Midday，Morning，Cloudless，Thick fog，Haze，Road surface water，Drizzle，Moderate rain，Heavy rain，Cloudy，Sunny.
+### 16 types of natural environmental corruption: Snow, Rain, Fog, Strong Sunlight, Gaussian Noise, Uniform Noise, Impulse Noise, Density Decrease, Cutout,LiDAR Crosstalk, Motion Blur, Local Density Decrease, Local Cutout, Local Gaussian Noise, Local Uniform Noise and Local Impluse Noise.
 
 ---
 
@@ -257,5 +257,3 @@ documentation.
 
 - [ ]  V1.1 Release
   - [ ] Safety-Critical Scenario Generation algorithms
-- [ ]  V1.2 Release
-  - [ ] LLM-based Scenario Generation algorithms
