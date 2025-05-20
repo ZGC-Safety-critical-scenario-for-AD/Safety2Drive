@@ -27,7 +27,7 @@ except ImportError:
 
 import carla
 
-from leaderboard.autoagents.autonomous_agent import AutonomousAgent, Track
+from autoagents.autonomous_agent import AutonomousAgent, Track
 
 
 def get_entry_point():

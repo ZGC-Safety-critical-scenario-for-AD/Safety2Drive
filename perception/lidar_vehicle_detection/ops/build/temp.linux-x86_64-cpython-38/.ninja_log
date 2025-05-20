@@ -1,0 +1,14 @@
+# ninja log v5
+0	8500	1717585373034538801	/mnt/data/PointPillars/ops/build/temp.linux-x86_64-cpython-38/voxelization/voxelization_cpu.o	2cfe1f332b8b269f
+0	9350	1717585373882542781	/mnt/data/PointPillars/ops/build/temp.linux-x86_64-cpython-38/voxelization/voxelization.o	fb12d3872dd5f4ee
+0	8445	1717585895552991198	/mnt/data/PointPillars/ops/build/temp.linux-x86_64-cpython-38/voxelization/voxelization_cpu.o	3b1b78a6b6bd76b5
+0	9356	1717585896460995459	/mnt/data/PointPillars/ops/build/temp.linux-x86_64-cpython-38/voxelization/voxelization.o	85c83c57bd7391bb
+3	9716	1732007402003193308	/mnt/data/PointPillars/ops/build/temp.linux-x86_64-cpython-38/voxelization/voxelization_cpu.o	7668f4efac5779e8
+2	10521	1732007402808200117	/mnt/data/PointPillars/ops/build/temp.linux-x86_64-cpython-38/voxelization/voxelization.o	82f11308993df1e9
+2	8739	1732007652251310140	/mnt/data/PointPillars/ops/build/temp.linux-x86_64-cpython-38/voxelization/voxelization_cpu.o	c3bd13214f76fdfc
+1	9815	1732007653327319242	/mnt/data/PointPillars/ops/build/temp.linux-x86_64-cpython-38/voxelization/voxelization.o	9cd32fcad4f18216
+1	8883	1732007680337547720	/mnt/data/PointPillars/ops/build/temp.linux-x86_64-cpython-38/voxelization/voxelization_cpu.o	8f31db095b549205
+0	9995	1732007681448557118	/mnt/data/PointPillars/ops/build/temp.linux-x86_64-cpython-38/voxelization/voxelization.o	1a5618dc269726f4
+1	10017	1732007681472557321	/mnt/data/PointPillars/ops/build/temp.linux-x86_64-cpython-38/voxelization/voxelization_cuda.o	9c073ad51ab237fe
+0	1402	1732007683764576709	/mnt/data/PointPillars/ops/build/temp.linux-x86_64-cpython-38/iou3d/iou3d_kernel.o	e0a5d2f7d0d68af7
+0	9931	1732007692289648822	/mnt/data/PointPillars/ops/build/temp.linux-x86_64-cpython-38/iou3d/iou3d.o	b2936d2dbe5a3296
