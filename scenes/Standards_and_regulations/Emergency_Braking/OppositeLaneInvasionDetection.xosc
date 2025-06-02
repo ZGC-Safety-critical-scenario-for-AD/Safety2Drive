@@ -24,7 +24,7 @@
             </Vehicle>
         </ScenarioObject>
 		<ScenarioObject name="vehicle_001">
-			<Vehicle name="vehicle.tesla.model3" vehicleCategory="car">
+			<Vehicle name="vehicle.ford.crown" vehicleCategory="car">
 				<BoundingBox>
 					<Center x="1.5" y="0" z="0.78" />
 					<Dimensions width="2.04" length="4.98" height="1.56" />
@@ -40,7 +40,7 @@
 			</Vehicle>
 		</ScenarioObject>
 		<ScenarioObject name="vehicle_002">
-			<Vehicle name="vehicle.tesla.model3" vehicleCategory="car">
+			<Vehicle name="vehicle.lincoln.mkz_2017" vehicleCategory="car">
 				<BoundingBox>
 					<Center x="1.4" y="0" z="0.75" />
 					<Dimensions width="2.1" length="4.9" height="1.5" />
@@ -97,7 +97,7 @@
 							<SpeedAction>
 								<SpeedActionDynamics dynamicsShape="step" value="0" dynamicsDimension="time" />
 								<SpeedActionTarget>
-									<AbsoluteTargetSpeed value="4" />
+									<AbsoluteTargetSpeed value="5" />
 								</SpeedActionTarget>
 							</SpeedAction>
 						</LongitudinalAction>
@@ -152,59 +152,6 @@
 		</Init>
 		<Story name="MyStory">
 			<Act name="Act1">
-				<ManeuverGroup maximumExecutionCount="1" name="ManeuverGroup1">
-					<Actors selectTriggeringEntities="false">
-						<EntityRef entityRef="hero" />
-					</Actors>
-					<Maneuver name="Maneuver1">
-						<Event name="E1ofActorego_vehicle" priority="parallel">
-							<Action name="A1ofE1ofActorego_vehicle">
-								<PrivateAction>
-									<RoutingAction>
-										<AssignRouteAction>
-											<Route closed="false" name="route">
-												<Waypoint routeStrategy="shortest">
-													<Position>
-														<WorldPosition x="-22.0" y="-137.3"  />
-													</Position>
-												</Waypoint>
-												<Waypoint routeStrategy="shortest">
-													<Position>
-														<WorldPosition x="-10.3" y="-137.4"/>
-													</Position>
-												</Waypoint>
-												<Waypoint routeStrategy="shortest">
-													<Position>
-														<WorldPosition x="-4.2" y="-137.5"/>
-													</Position>
-												</Waypoint>
-												<Waypoint routeStrategy="shortest">
-													<Position>
-														<WorldPosition x="18.6" y="-137.6"/>
-													</Position>
-												</Waypoint>
-												<Waypoint routeStrategy="shortest">
-													<Position>
-														<WorldPosition x="64.2" y="-137.3"/>
-													</Position>
-												</Waypoint>
-											</Route>
-										</AssignRouteAction>
-									</RoutingAction>
-								</PrivateAction>
-							</Action>
-							<StartTrigger>
-								<ConditionGroup>
-									<Condition name="C1ofCG1ofE1ofActorego_vehicle" delay="0" conditionEdge="rising">
-										<ByValueCondition>
-											<SimulationTimeCondition value="0" rule="greaterThan" />
-										</ByValueCondition>
-									</Condition>
-								</ConditionGroup>
-							</StartTrigger>
-						</Event>
-					</Maneuver>
-				</ManeuverGroup>
 				<ManeuverGroup maximumExecutionCount="1" name="ManeuverGroup1">
 					<Actors selectTriggeringEntities="false">
 						<EntityRef entityRef="vehicle_001" />
@@ -366,59 +313,6 @@
 				</StopTrigger>
 			</Act>
 		</Story>
-		<StopTrigger>
-			<ConditionGroup>
-				<Condition name="criteria_RunningStopTest" delay="0" conditionEdge="rising">
-					<ByValueCondition>
-						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
-					</ByValueCondition>
-				</Condition>
-				<Condition name="criteria_RunningRedLightTest" delay="0" conditionEdge="rising">
-					<ByValueCondition>
-						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
-					</ByValueCondition>
-				</Condition>
-				<Condition name="criteria_WrongLaneTest" delay="0" conditionEdge="rising">
-					<ByValueCondition>
-						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
-					</ByValueCondition>
-				</Condition>
-				<Condition name="criteria_OnSidewalkTest" delay="0" conditionEdge="rising">
-					<ByValueCondition>
-						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
-					</ByValueCondition>
-				</Condition>
-				<Condition name="criteria_KeepLaneTest" delay="0" conditionEdge="rising">
-					<ByValueCondition>
-						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
-					</ByValueCondition>
-				</Condition>
-				<Condition name="criteria_CollisionTest" delay="0" conditionEdge="rising">
-					<ByValueCondition>
-						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
-					</ByValueCondition>
-				</Condition>
-				<Condition name="criteria_DrivenDistanceTest" delay="0" conditionEdge="rising">
-					<ByValueCondition>
-						<ParameterCondition parameterRef="distance_success" value="40" rule="lessThan"/>
-					</ByValueCondition>
-				</Condition>
-				<Condition name="criteria_OffRoadTest" delay="0" conditionEdge="rising">
-					<ByValueCondition>
-						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
-					</ByValueCondition>
-				</Condition>
-					<Condition name="criteria_RouteCompletionTest" delay="0" conditionEdge="rising">
-					<ByValueCondition>
-						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
-					</ByValueCondition>
-				</Condition>
-					<Condition name="criteria_InRouteTest" delay="0" conditionEdge="rising">
-					<ByValueCondition>
-						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
-					</ByValueCondition>
-				</Condition>
-			</ConditionGroup>
-		</StopTrigger>
+		<StopTrigger />
 	</Storyboard>
 </OpenSCENARIO>

@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <OpenSCENARIO>
-	<FileHeader revMajor="1" revMinor="0" date="2024-09-23T16:52:13" description="障碍物识别（行人）" author="Jiacheng Chen" />
+	<FileHeader revMajor="1" revMinor="0" date="2024-05-29T17:51:54" description="障碍物识别（行人）" author="Jiacheng Chen" />
 	<CatalogLocations />
 	<RoadNetwork>
-		<LogicFile filepath="Town05" />
+		<LogicFile filepath="Town10HD" />
 	</RoadNetwork>
 	<Entities>
 		<ScenarioObject name="hero">
@@ -76,7 +76,7 @@
 							<SpeedAction>
 								<SpeedActionDynamics dynamicsShape="step" value="0" dynamicsDimension="time" />
 								<SpeedActionTarget>
-									<AbsoluteTargetSpeed value="3" />
+									<AbsoluteTargetSpeed value="7" />
 								</SpeedActionTarget>
 							</SpeedAction>
 						</LongitudinalAction>
@@ -84,7 +84,7 @@
 					<PrivateAction>
 						<TeleportAction>
 							<Position>
-								<WorldPosition x="-44.951" y="104.603" z="0.055" h="1.674416" p="0.0" r="0.0" />
+								<WorldPosition x="20" y="-140.6" z="0" h="6.277041748212566" p="0.0" r="0.0" />
 							</Position>
 						</TeleportAction>
 					</PrivateAction>
@@ -103,70 +103,56 @@
 					<PrivateAction>
 						<TeleportAction>
 							<Position>
-								<WorldPosition x="-48.756" y="119.008" z="0.055" h="2.001840" p="0.0" r="0.0" />
+								<WorldPosition x="37" y="-141.186" z="0" h="6.277041748212566" p="0.0" r="0.0" />
 							</Position>
 						</TeleportAction>
 					</PrivateAction>
 				</Private>
 			</Actions>
 		</Init>
-		
-
-		<Story name="MyStory">
+        <Story name="MyStory">
 			<Act name="Act1">
 				<ManeuverGroup maximumExecutionCount="1" name="ManeuverGroup1">
 					<Actors selectTriggeringEntities="false">
 						<EntityRef entityRef="hero" />
 					</Actors>
-					<Maneuver name="Maneuver1">
-						<Event name="E1ofActorego_vehicle" priority="parallel">
-							<Action name="A1ofE1ofActorego_vehicle">
-								<PrivateAction>
-									<RoutingAction>
-										<AssignRouteAction>
-											<Route closed="false" name="route">
-												<Waypoint routeStrategy="shortest">
-													<Position>
-														<WorldPosition x="-48.2" y="111.3"  />
-													</Position>
-												</Waypoint>
-												<Waypoint routeStrategy="shortest">
-													<Position>
-														<WorldPosition  x="-50.5" y="115.3"/>
-													</Position>
-												</Waypoint>
-												<Waypoint routeStrategy="shortest">
-													<Position>
-														<WorldPosition  x="-55.5" y="123.1" />
-													</Position>
-												</Waypoint>
-												<Waypoint routeStrategy="shortest">
-													<Position>
-														<WorldPosition  x="-58.3" y="127.2" />
-													</Position>
-												</Waypoint>
-												<Waypoint routeStrategy="shortest">
-													<Position>
-														<WorldPosition  x="-63.9" y="132.5" />
-													</Position>
-												</Waypoint>
-											</Route>
-										</AssignRouteAction>
-									</RoutingAction>
-								</PrivateAction>
-							</Action>
-							<StartTrigger>
-								<ConditionGroup>
-									<Condition name="C1ofCG1ofE1ofActorego_vehicle" delay="0" conditionEdge="rising">
-										<ByValueCondition>
-											<SimulationTimeCondition value="0" rule="greaterThan" />
-										</ByValueCondition>
-									</Condition>
-								</ConditionGroup>
+					<Maneuver name="DriveToDestination">
+						<Event name="StartDriving" priority="overwrite">
+							<Action name="DriveForward">
+									<PrivateAction>
+										<LongitudinalAction>
+											<SpeedAction>
+												<SpeedActionDynamics dynamicsShape="step" value="0" dynamicsDimension="time" />
+												<SpeedActionTarget>
+													<AbsoluteTargetSpeed value="6" />
+												</SpeedActionTarget>
+											</SpeedAction>
+										</LongitudinalAction>
+									</PrivateAction>
+								</Action>
+								<StartTrigger>
+									<ConditionGroup>
+										<Condition name="StartCondition" delay="0" conditionEdge="rising">
+											<ByEntityCondition>
+											<TriggeringEntities triggeringEntitiesRule="any">
+												<EntityRef entityRef="hero"/>
+											</TriggeringEntities>
+											<EntityCondition>
+												<ReachPositionCondition tolerance="7.0">
+												<Position>
+													<WorldPosition x="50" y="-141.186" z="0" h="6.277041748212566" p="0.0" r="0.0" />
+												</Position>
+												</ReachPositionCondition>
+											</EntityCondition>
+											</ByEntityCondition>
+										</Condition>
+									</ConditionGroup>
 							</StartTrigger>
 			  			</Event>
 					</Maneuver>
 				</ManeuverGroup>
+				
+
 				<StartTrigger>
 					<ConditionGroup>
 						<Condition name="ActStartCondition" delay="0" conditionEdge="rising">
@@ -178,64 +164,15 @@
 				</StartTrigger>
 				<StopTrigger>
 					<ConditionGroup>
-						<Condition name="timeout" delay="0" conditionEdge="rising">
-							<ByValueCondition>
-								<SimulationTimeCondition value="120" rule="greaterThan" />
-							</ByValueCondition>
-						</Condition>
-					</ConditionGroup>
-					<ConditionGroup>
-						<Condition name="collision_vehicle" delay="0" conditionEdge="rising">
-							<ByEntityCondition>
-								<TriggeringEntities triggeringEntitiesRule="any">
-									<EntityRef entityRef="hero" />
-								</TriggeringEntities>
-								<EntityCondition>
-									<CollisionCondition>
-										<ByType type="vehicle" />
-									</CollisionCondition>
-								</EntityCondition>
-							</ByEntityCondition>
-						</Condition>
-					</ConditionGroup>
-					<ConditionGroup>
-						<Condition name="collision_pedestrian" delay="0" conditionEdge="rising">
-							<ByEntityCondition>
-								<TriggeringEntities triggeringEntitiesRule="any">
-									<EntityRef entityRef="hero" />
-								</TriggeringEntities>
-								<EntityCondition>
-									<CollisionCondition>
-										<ByType type="pedestrian" />
-									</CollisionCondition>
-								</EntityCondition>
-							</ByEntityCondition>
-						</Condition>
-					</ConditionGroup>
-					<ConditionGroup>
-						<Condition name="collision_misobject" delay="0" conditionEdge="rising">
-							<ByEntityCondition>
-								<TriggeringEntities triggeringEntitiesRule="any">
-									<EntityRef entityRef="hero" />
-								</TriggeringEntities>
-								<EntityCondition>
-									<CollisionCondition>
-										<ByType type="miscellaneous" />
-									</CollisionCondition>
-								</EntityCondition>
-							</ByEntityCondition>
-						</Condition>
-					</ConditionGroup>
-					<ConditionGroup>
 						<Condition name="EndCondition" delay="0" conditionEdge="rising">
-							<ByEntityCondition>
-								<TriggeringEntities triggeringEntitiesRule="any">
-									<EntityRef entityRef="hero"/>
-								</TriggeringEntities>
-								<EntityCondition>
-									<TraveledDistanceCondition value="40.0"/>
-								</EntityCondition>
-							</ByEntityCondition>
+						<ByEntityCondition>
+							<TriggeringEntities triggeringEntitiesRule="any">
+							<EntityRef entityRef="hero"/>
+							</TriggeringEntities>
+							<EntityCondition>
+							<TraveledDistanceCondition value="40.0"/>
+							</EntityCondition>
+						</ByEntityCondition>
 						</Condition>
 					</ConditionGroup>
 				</StopTrigger>
@@ -275,22 +212,7 @@
 				</Condition>
 				<Condition name="criteria_DrivenDistanceTest" delay="0" conditionEdge="rising">
 					<ByValueCondition>
-						<ParameterCondition parameterRef="distance_success" value="30" rule="lessThan"/>
-					</ByValueCondition>
-				</Condition>
-				<Condition name="criteria_OffRoadTest" delay="0" conditionEdge="rising">
-					<ByValueCondition>
-						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
-					</ByValueCondition>
-				</Condition>
-				<Condition name="criteria_RouteCompletionTest" delay="0" conditionEdge="rising">
-					<ByValueCondition>
-						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
-					</ByValueCondition>
-				</Condition>
-				<Condition name="criteria_InRouteTest" delay="0" conditionEdge="rising">
-					<ByValueCondition>
-						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+						<ParameterCondition parameterRef="distance_success" value="40" rule="lessThan"/>
 					</ByValueCondition>
 				</Condition>
 			</ConditionGroup>
