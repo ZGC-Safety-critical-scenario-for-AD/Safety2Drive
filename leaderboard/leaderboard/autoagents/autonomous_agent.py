@@ -25,9 +25,6 @@ class Track(Enum):
     """
     SENSORS = 'SENSORS'
     MAP = 'MAP'
-    SENSORS_QUALIFIER = 'SENSORS_QUALIFIER'
-    MAP_QUALIFIER = 'MAP_QUALIFIER'
-
 
 class AutonomousAgent(object):
 
@@ -35,7 +32,7 @@ class AutonomousAgent(object):
     Autonomous agent base class. All user agents have to be derived from this class
     """
 
-    def __init__(self, carla_host, carla_port, debug=False):
+    def __init__(self, path_to_conf_file):
         self.track = Track.SENSORS
         #  current global plans to reach a destination
         self._global_plan = None
@@ -44,9 +41,10 @@ class AutonomousAgent(object):
         # this data structure will contain all sensor data
         self.sensor_interface = SensorInterface()
 
-        self.wallclock_t0 = None
+        # agent's initialization
+        self.setup(path_to_conf_file)
 
-        self.get_hero()
+        self.wallclock_t0 = None
 
     def setup(self, path_to_conf_file):
         """
@@ -103,7 +101,7 @@ class AutonomousAgent(object):
         Execute the agent call, e.g. agent()
         Returns the next vehicle controls
         """
-        input_data = self.sensor_interface.get_data(GameTime.get_frame())
+        input_data = self.sensor_interface.get_data()
 
         timestamp = GameTime.get_time()
 
@@ -111,19 +109,13 @@ class AutonomousAgent(object):
             self.wallclock_t0 = GameTime.get_wallclocktime()
         wallclock = GameTime.get_wallclocktime()
         wallclock_diff = (wallclock - self.wallclock_t0).total_seconds()
-        sim_ratio = 0 if wallclock_diff == 0 else timestamp/wallclock_diff
 
-        print('=== [Agent] -- Wallclock = {} -- System time = {} -- Game time = {} -- Ratio = {}x'.format(
-            str(wallclock)[:-3], format(wallclock_diff, '.3f'), format(timestamp, '.3f'), format(sim_ratio, '.3f')), flush=True)
+        #print('======[Agent] Wallclock_time = {} / {} / Sim_time = {} / {}x'.format(wallclock, wallclock_diff, timestamp, timestamp/(wallclock_diff+0.001)))
 
         control = self.run_step(input_data, timestamp)
         control.manual_gear_shift = False
 
         return control
-
-    @staticmethod
-    def get_ros_version():
-        return -1
 
     def set_global_plan(self, global_plan_gps, global_plan_world_coord):
         """
@@ -132,30 +124,3 @@ class AutonomousAgent(object):
         ds_ids = downsample_route(global_plan_world_coord, 50)
         self._global_plan_world_coord = [(global_plan_world_coord[x][0], global_plan_world_coord[x][1]) for x in ds_ids]
         self._global_plan = [global_plan_gps[x] for x in ds_ids]
-        self._plan_gps_HACK = global_plan_gps
-    
-    def get_hero(self):
-        hero_actor = None
-        from srunner.scenariomanager.carla_data_provider import CarlaDataProvider
-        for actor in CarlaDataProvider.get_world().get_actors():
-            if 'role_name' in actor.attributes and actor.attributes['role_name'] == 'hero':
-                hero_actor = actor
-                break
-        self.hero_actor = hero_actor
-    
-    def get_metric_info(self):
-        
-        def vector2list(vector, rotation=False):
-            if rotation:
-                return [vector.roll, vector.pitch, vector.yaw]
-            else:
-                return [vector.x, vector.y, vector.z]
-
-        output = {}
-        output['acceleration'] = vector2list(self.hero_actor.get_acceleration())
-        output['angular_velocity'] = vector2list(self.hero_actor.get_angular_velocity())
-        output['forward_vector'] = vector2list(self.hero_actor.get_transform().get_forward_vector())
-        output['right_vector'] = vector2list(self.hero_actor.get_transform().get_right_vector())
-        output['location'] = vector2list(self.hero_actor.get_transform().location)
-        output['rotation'] = vector2list(self.hero_actor.get_transform().rotation, rotation=True)
-        return output

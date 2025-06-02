@@ -1,0 +1,5 @@
+# specific to adv_patch_gen, yolov5 base requirements should be installed as well
+Cython==3.0.8
+easydict==1.12
+pycocotools==2.0.6
+tensorboard==2.16.2

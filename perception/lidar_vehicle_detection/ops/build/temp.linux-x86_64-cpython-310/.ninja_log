@@ -1,0 +1,6 @@
+# ninja log v5
+0	15300	1739071638589750623	/mnt/pxy/perception/1/ops/build/temp.linux-x86_64-cpython-310/voxelization/voxelization.o	5e9ef74eef440baf
+0	15503	1739071638789752237	/mnt/pxy/perception/1/ops/build/temp.linux-x86_64-cpython-310/voxelization/voxelization_cpu.o	f32726505107dc8a
+0	18268	1739071641556774565	/mnt/pxy/perception/1/ops/build/temp.linux-x86_64-cpython-310/voxelization/voxelization_cuda.o	cfa3aace750fd1d9
+0	1868	1739071643845793036	/mnt/pxy/perception/1/ops/build/temp.linux-x86_64-cpython-310/iou3d/iou3d_kernel.o	7a4bb5103bf8ffdf
+0	14362	1739071656332893799	/mnt/pxy/perception/1/ops/build/temp.linux-x86_64-cpython-310/iou3d/iou3d.o	dc46093041c9d35c
