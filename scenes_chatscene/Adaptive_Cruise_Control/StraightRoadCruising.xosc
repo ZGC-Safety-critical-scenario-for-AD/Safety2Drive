@@ -162,54 +162,54 @@
 		<StopTrigger>
       <ConditionGroup>
         <Condition name="criteria_RunningStopTest" delay="0" conditionEdge="rising">
-          <ByValueCondition>
-            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
-          </ByValueCondition>
+			<ByValueCondition>
+				<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+			</ByValueCondition>
         </Condition>
         <Condition name="criteria_RunningRedLightTest" delay="0" conditionEdge="rising">
-          <ByValueCondition>
-            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
-          </ByValueCondition>
+			<ByValueCondition>
+				<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+			</ByValueCondition>
         </Condition>
         <Condition name="criteria_WrongLaneTest" delay="0" conditionEdge="rising">
-          <ByValueCondition>
-            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
-          </ByValueCondition>
+			<ByValueCondition>
+				<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+			</ByValueCondition>
         </Condition>
         <Condition name="criteria_OnSidewalkTest" delay="0" conditionEdge="rising">
-          <ByValueCondition>
-            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
-          </ByValueCondition>
+			<ByValueCondition>
+				<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+			</ByValueCondition>
         </Condition>
         <Condition name="criteria_KeepLaneTest" delay="0" conditionEdge="rising">
-          <ByValueCondition>
-            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
-          </ByValueCondition>
+			<ByValueCondition>
+				<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+			</ByValueCondition>
         </Condition>
         <Condition name="criteria_CollisionTest" delay="0" conditionEdge="rising">
-          <ByValueCondition>
-            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
-          </ByValueCondition>
+			<ByValueCondition>
+				<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+			</ByValueCondition>
         </Condition>
         <Condition name="criteria_DrivenDistanceTest" delay="0" conditionEdge="rising">
-          <ByValueCondition>
-            <ParameterCondition parameterRef="distance_success" value="60" rule="lessThan"/>
-          </ByValueCondition>
+			<ByValueCondition>
+				<ParameterCondition parameterRef="distance_success" value="60" rule="lessThan"/>
+			</ByValueCondition>
         </Condition>
 		<Condition name="criteria_OffRoadTest" delay="0" conditionEdge="rising">
-          <ByValueCondition>
-            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
-          </ByValueCondition>
+			<ByValueCondition>
+				<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+			</ByValueCondition>
         </Condition>
-				<Condition name="criteria_RouteCompletionTest" delay="0" conditionEdge="rising">
-          <ByValueCondition>
-            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
-          </ByValueCondition>
+		<Condition name="criteria_RouteCompletionTest" delay="0" conditionEdge="rising">
+			<ByValueCondition>
+				<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+			</ByValueCondition>
         </Condition>
-						<Condition name="criteria_InRouteTest" delay="0" conditionEdge="rising">
-          <ByValueCondition>
-            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
-          </ByValueCondition>
+		<Condition name="criteria_InRouteTest" delay="0" conditionEdge="rising">
+			<ByValueCondition>
+				<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+			</ByValueCondition>
         </Condition>
       </ConditionGroup>
     </StopTrigger>

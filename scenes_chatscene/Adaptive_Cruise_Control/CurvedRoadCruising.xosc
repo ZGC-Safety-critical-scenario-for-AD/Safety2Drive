@@ -199,12 +199,12 @@
             <ParameterCondition parameterRef="" value="" rule="lessThan"/>
           </ByValueCondition>
         </Condition>
-				<Condition name="criteria_RouteCompletionTest" delay="0" conditionEdge="rising">
+		<Condition name="criteria_RouteCompletionTest" delay="0" conditionEdge="rising">
           <ByValueCondition>
             <ParameterCondition parameterRef="" value="" rule="lessThan"/>
           </ByValueCondition>
         </Condition>
-						<Condition name="criteria_InRouteTest" delay="0" conditionEdge="rising">
+		<Condition name="criteria_InRouteTest" delay="0" conditionEdge="rising">
           <ByValueCondition>
             <ParameterCondition parameterRef="" value="" rule="lessThan"/>
           </ByValueCondition>
