@@ -76,7 +76,7 @@
 							<SpeedAction>
 								<SpeedActionDynamics dynamicsShape="step" value="0" dynamicsDimension="time" />
 								<SpeedActionTarget>
-									<AbsoluteTargetSpeed value="0" />
+									<AbsoluteTargetSpeed value="3" />
 								</SpeedActionTarget>
 							</SpeedAction>
 						</LongitudinalAction>
@@ -112,6 +112,54 @@
 		</Init>
 		<Story name="MyStory">
 			<Act name="Act1">
+				<ManeuverGroup maximumExecutionCount="1" name="ManeuverGroup1">
+					<Actors selectTriggeringEntities="false">
+						<EntityRef entityRef="hero" />
+					</Actors>
+					<Maneuver name="Maneuver1">
+						<Event name="E1ofActorego_vehicle" priority="parallel">
+							<Action name="A1ofE1ofActorego_vehicle">
+								<PrivateAction>
+									<RoutingAction>
+										<AssignRouteAction>
+											<Route closed="false" name="route">
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="-41.5" y="-62.3"  />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="-41.6" y="-57.1"/>
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="-41.8" y="-47.3"/>
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="-42.0" y="-33.8"/>
+													</Position>
+												</Waypoint>
+											</Route>
+										</AssignRouteAction>
+									</RoutingAction>
+								</PrivateAction>
+							</Action>
+							<StartTrigger>
+								<ConditionGroup>
+									<Condition name="C1ofCG1ofE1ofActorego_vehicle" delay="0" conditionEdge="rising">
+										<ByValueCondition>
+											<SimulationTimeCondition value="0" rule="greaterThan" />
+										</ByValueCondition>
+									</Condition>
+								</ConditionGroup>
+							</StartTrigger>
+						</Event>
+					</Maneuver>
+				</ManeuverGroup>
 				<ManeuverGroup maximumExecutionCount="1" name="ManeuverGroup1">
 					<Actors selectTriggeringEntities="false">
 						<EntityRef entityRef="pedestrian_001" />
@@ -280,6 +328,21 @@
 				<Condition name="criteria_DrivenDistanceTest" delay="0" conditionEdge="rising">
 					<ByValueCondition>
 						<ParameterCondition parameterRef="distance_success" value="40" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_OffRoadTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+							<Condition name="criteria_RouteCompletionTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+									<Condition name="criteria_InRouteTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
 					</ByValueCondition>
 				</Condition>
 			</ConditionGroup>

@@ -126,11 +126,25 @@
 							<Action name="A1ofE1ofActorego_vehicle">
 								<PrivateAction>
 									<RoutingAction>
-										<AcquirePositionAction>
-											<Position>
-												<WorldPosition x="-18.835" y="-13.474" z="0" h="3.1388175800791225" p="0.0" r="0.0" />
-											</Position>
-										</AcquirePositionAction>
+										<AssignRouteAction>
+											<Route closed="false" name="route">
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="-44.9" y="-105.7" />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="-45.0" y="-94.6" />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="-45.0" y="-81.9" />
+													</Position>
+												</Waypoint>
+											</Route>
+										</AssignRouteAction>
 									</RoutingAction>
 								</PrivateAction>
 							</Action>
@@ -202,20 +216,6 @@
 							<ByValueCondition>
 								<SimulationTimeCondition value="120" rule="greaterThan" />
 							</ByValueCondition>
-						</Condition>
-					</ConditionGroup>
-					<ConditionGroup>
-						<Condition name="collision_vehicle" delay="0" conditionEdge="rising">
-							<ByEntityCondition>
-								<TriggeringEntities triggeringEntitiesRule="any">
-									<EntityRef entityRef="hero" />
-								</TriggeringEntities>
-								<EntityCondition>
-									<CollisionCondition>
-										<ByType type="vehicle" />
-									</CollisionCondition>
-								</EntityCondition>
-							</ByEntityCondition>
 						</Condition>
 					</ConditionGroup>
 					<ConditionGroup>
@@ -296,6 +296,21 @@
 				<Condition name="criteria_DrivenDistanceTest" delay="0" conditionEdge="rising">
 					<ByValueCondition>
 						<ParameterCondition parameterRef="distance_success" value="30" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_OffRoadTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+					<Condition name="criteria_RouteCompletionTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+					<Condition name="criteria_InRouteTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
 					</ByValueCondition>
 				</Condition>
 			</ConditionGroup>

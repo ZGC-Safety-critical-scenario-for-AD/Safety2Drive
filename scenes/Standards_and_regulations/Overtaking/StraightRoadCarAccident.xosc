@@ -81,7 +81,7 @@
 							<SpeedAction>
 								<SpeedActionDynamics dynamicsShape="step" value="0" dynamicsDimension="time" />
 								<SpeedActionTarget>
-									<AbsoluteTargetSpeed value="0" />
+									<AbsoluteTargetSpeed value="3" />
 								</SpeedActionTarget>
 							</SpeedAction>
 						</LongitudinalAction>
@@ -89,7 +89,7 @@
 					<PrivateAction>
 						<TeleportAction>
 							<Position>
-								<WorldPosition x="87" y="5.094" z="0" h="3.176900664357638" p="0.0" r="0.0" />
+								<WorldPosition x="87" y="2" z="0" h="3.176900664357638" p="0.0" r="0.0" />
 							</Position>
 						</TeleportAction>
 					</PrivateAction>
@@ -121,18 +121,41 @@
 					<Actors selectTriggeringEntities="false">
 						<EntityRef entityRef="hero" />
 					</Actors>
-					<Maneuver name="DriveToDestination">
-						<Event name="StartDriving" priority="overwrite">
-							<Action name="DriveForward">
+					<Maneuver name="Maneuver1">
+						<Event name="E1ofActorego_vehicle" priority="parallel">
+							<Action name="A1ofE1ofActorego_vehicle">
 								<PrivateAction>
-									<LongitudinalAction>
-										<SpeedAction>
-											<SpeedActionDynamics dynamicsShape="step" value="0" dynamicsDimension="time" />
-												<SpeedActionTarget>
-													<AbsoluteTargetSpeed value="6" />
-												</SpeedActionTarget>
-											</SpeedAction>
-									</LongitudinalAction>
+									<RoutingAction>
+										<AssignRouteAction>
+											<Route closed="false" name="route">
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="84.6" y="2.0"  />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="75.0" y="2"/>
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="65.9" y="1.3" />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="60.2" y="1.3" />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="52.0" y="1.3" />
+													</Position>
+												</Waypoint>
+											</Route>
+										</AssignRouteAction>
+									</RoutingAction>
 								</PrivateAction>
 							</Action>
 						<StartTrigger>
@@ -265,6 +288,21 @@
 				<Condition name="criteria_DrivenDistanceTest" delay="0" conditionEdge="rising">
 					<ByValueCondition>
 						<ParameterCondition parameterRef="distance_success" value="40" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_OffRoadTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_RouteCompletionTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_InRouteTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
 					</ByValueCondition>
 				</Condition>
 			</ConditionGroup>

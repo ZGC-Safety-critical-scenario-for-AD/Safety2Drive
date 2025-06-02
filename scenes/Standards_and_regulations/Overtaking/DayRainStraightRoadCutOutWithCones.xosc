@@ -114,7 +114,7 @@
 							<SpeedAction>
 								<SpeedActionDynamics dynamicsShape="step" value="0" dynamicsDimension="time" />
 								<SpeedActionTarget>
-									<AbsoluteTargetSpeed value="0" />
+									<AbsoluteTargetSpeed value="3" />
 								</SpeedActionTarget>
 							</SpeedAction>
 						</LongitudinalAction>
@@ -186,11 +186,35 @@
 							<Action name="A1ofE1ofActorego_vehicle">
 								<PrivateAction>
 									<RoutingAction>
-										<AcquirePositionAction>
-											<Position>
-												<WorldPosition x="-18.835" y="-13.474" z="0" h="3.1388175800791225" p="0.0" r="0.0" />
-											</Position>
-										</AcquirePositionAction>
+										<AssignRouteAction>
+											<Route closed="false" name="route">
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="48.7" y="-13.6"  />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition  x="45.9" y="-13.6"/>
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition  x="28.1" y="-16.5" />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition  x="23.8" y="-16.5" />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition  x="12.3" y="-16.6" />
+													</Position>
+												</Waypoint>
+											</Route>
+										</AssignRouteAction>
 									</RoutingAction>
 								</PrivateAction>
 							</Action>
@@ -366,6 +390,21 @@
 				<Condition name="criteria_DrivenDistanceTest" delay="0" conditionEdge="rising">
 					<ByValueCondition>
 						<ParameterCondition parameterRef="distance_success" value="50" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_OffRoadTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_RouteCompletionTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_InRouteTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
 					</ByValueCondition>
 				</Condition>
 			</ConditionGroup>

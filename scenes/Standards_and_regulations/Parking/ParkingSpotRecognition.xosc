@@ -86,20 +86,33 @@
 					<Actors selectTriggeringEntities="false">
 						<EntityRef entityRef="hero" />
 					</Actors>
-					<Maneuver name="DriveToDestination">
-						<Event name="StartDriving" priority="overwrite">
-							<Action name="DriveForward">
-									<PrivateAction>
-										<LongitudinalAction>
-											<SpeedAction>
-												<SpeedActionDynamics dynamicsShape="step" value="0" dynamicsDimension="time" />
-												<SpeedActionTarget>
-													<AbsoluteTargetSpeed value="6" />
-												</SpeedActionTarget>
-											</SpeedAction>
-										</LongitudinalAction>
-									</PrivateAction>
-								</Action>
+					<Maneuver name="Maneuver1">
+						<Event name="E1ofActorego_vehicle" priority="parallel">
+							<Action name="A1ofE1ofActorego_vehicle">
+								<PrivateAction>
+									<RoutingAction>
+										<AssignRouteAction>
+											<Route closed="false" name="route">
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition  x="-86.3" y="62.3"  />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition  x="-80.4" y="63.5"/>
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition  x="-76.6" y="65.5"/>
+													</Position>
+												</Waypoint>
+											</Route>
+										</AssignRouteAction>
+									</RoutingAction>
+								</PrivateAction>
+							</Action>
 								<StartTrigger>
                                     <ConditionGroup>
                                         <Condition name="StartCondition" delay="0" conditionEdge="rising">
@@ -152,6 +165,59 @@
 				</StopTrigger>
 			</Act>
 		</Story>
-		<StopTrigger />
+		<StopTrigger>
+			<ConditionGroup>
+				<Condition name="criteria_RunningStopTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_RunningRedLightTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_WrongLaneTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_OnSidewalkTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_KeepLaneTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_CollisionTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_DrivenDistanceTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="distance_success" value="10" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_OffRoadTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_RouteCompletionTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_InRouteTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+			</ConditionGroup>
+		</StopTrigger>
 	</Storyboard>
 </OpenSCENARIO>

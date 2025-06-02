@@ -125,27 +125,40 @@
 						<Event name="E1ofActorego_vehicle" priority="parallel">
 							<Action name="A1ofE1ofActorego_vehicle">
 								<PrivateAction>
-									<LongitudinalAction>
-											<SpeedAction>
-												<SpeedActionDynamics dynamicsShape="step" value="0" dynamicsDimension="time" />
-												<SpeedActionTarget>
-													<AbsoluteTargetSpeed value="0" />
-												</SpeedActionTarget>
-											</SpeedAction>
-										</LongitudinalAction>
+									<RoutingAction>
+										<AssignRouteAction>
+											<Route closed="false" name="route">
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="-52.2" y="-53.3"  />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="-52.2" y="-56.3"/>
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="-52.17" y="-67.3" />
+													</Position>
+												</Waypoint>
+                                                <Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="-52.17" y="-71.8" />
+													</Position>
+												</Waypoint>
+											</Route>
+										</AssignRouteAction>
+									</RoutingAction>
 								</PrivateAction>
 							</Action>
 							<StartTrigger>
 								<ConditionGroup>
-									<Condition name="C1ofCG1ofE1ofActorpedestrian_001" delay="0" conditionEdge="rising">
-										<ByEntityCondition>
-											<TriggeringEntities triggeringEntitiesRule="any">
-												<EntityRef entityRef="hero" />
-											</TriggeringEntities>
-											<EntityCondition>
-												<RelativeDistanceCondition entityRef="vehicle_001" relativeDistanceType="cartesianDistance" value="5" freespace="false" rule="lessThan" />
-											</EntityCondition>
-										</ByEntityCondition>
+									<Condition name="C1ofCG1ofE1ofActorego_vehicle" delay="0" conditionEdge="rising">
+										<ByValueCondition>
+											<SimulationTimeCondition value="0" rule="greaterThan" />
+										</ByValueCondition>
 									</Condition>
 								</ConditionGroup>
 							</StartTrigger>
@@ -185,14 +198,14 @@
 					</ConditionGroup>
 					<ConditionGroup>
 						<Condition name="EndCondition" delay="0" conditionEdge="rising">
-						<ByEntityCondition>
-							<TriggeringEntities triggeringEntitiesRule="any">
-							<EntityRef entityRef="hero"/>
-							</TriggeringEntities>
-							<EntityCondition>
-							<TraveledDistanceCondition value="80.0"/>
-							</EntityCondition>
-						</ByEntityCondition>
+							<ByEntityCondition>
+								<TriggeringEntities triggeringEntitiesRule="any">
+								<EntityRef entityRef="hero"/>
+								</TriggeringEntities>
+								<EntityCondition>
+								<TraveledDistanceCondition value="80.0"/>
+								</EntityCondition>
+							</ByEntityCondition>
 						</Condition>
 					</ConditionGroup>
 				</StopTrigger>
@@ -226,9 +239,29 @@
 					</ByValueCondition>
 				</Condition>
 				<Condition name="criteria_CollisionTest" delay="0" conditionEdge="rising">
-				<ByValueCondition>
-					<ParameterCondition parameterRef="" value="" rule="lessThan"/>
-				</ByValueCondition>
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_DrivenDistanceTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="distance_success" value="35" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_OffRoadTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_RouteCompletionTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_InRouteTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
 				</Condition>
 			</ConditionGroup>
 		</StopTrigger>

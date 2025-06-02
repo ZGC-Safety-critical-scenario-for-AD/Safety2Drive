@@ -90,14 +90,52 @@
 						<Event name="E1ofActorego_vehicle" priority="parallel">
 							<Action name="A1ofE1ofActorego_vehicle">
 								<PrivateAction>
-									<LongitudinalAction>
-											<SpeedAction>
-												<SpeedActionDynamics dynamicsShape="step" value="0" dynamicsDimension="time" />
-												<SpeedActionTarget>
-													<AbsoluteTargetSpeed value="4" />
-												</SpeedActionTarget>
-											</SpeedAction>
-										</LongitudinalAction>
+									<RoutingAction>
+										<AssignRouteAction>
+											<Route closed="false" name="route">
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="54.3" y="-104.1"  />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="56.3" y="-102.3"/>
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="61.8" y="-97.5" />
+													</Position>
+												</Waypoint>
+                                                <Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="68.2" y="-90.9" />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="70.8" y="-86.1" />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="72.8" y="-78.7" />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="71.9" y="-68.3" />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="70.6" y="-62.7" />
+													</Position>
+												</Waypoint>
+											</Route>
+										</AssignRouteAction>
+									</RoutingAction>
 								</PrivateAction>
 							</Action>
 							<StartTrigger>
@@ -182,6 +220,21 @@
 				<Condition name="criteria_DrivenDistanceTest" delay="0" conditionEdge="rising">
 					<ByValueCondition>
 						<ParameterCondition parameterRef="distance_success" value="50" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_OffRoadTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_RouteCompletionTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_InRouteTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
 					</ByValueCondition>
 				</Condition>
 			</ConditionGroup>

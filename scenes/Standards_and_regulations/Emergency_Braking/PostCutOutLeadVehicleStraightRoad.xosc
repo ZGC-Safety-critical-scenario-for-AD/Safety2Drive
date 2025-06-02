@@ -158,14 +158,28 @@
 					</Actors>
 					<Maneuver name="Maneuver1">
 						<Event name="E1ofActorego_vehicle" priority="parallel">
-							<Action name="A1ofE1ofActorego_vehicle">
+							<Action name="A1ofE1ofActorvehicle_001">
 								<PrivateAction>
 									<RoutingAction>
-										<AcquirePositionAction>
-											<Position>
-												<WorldPosition x="-18.835" y="-13.474" z="0" h="3.1388175800791225" p="0.0" r="0.0" />
-											</Position>
-										</AcquirePositionAction>
+										<AssignRouteAction>
+											<Route closed="false" name="route">
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="210.076" y="-76.1"  />
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="210.5" y="-54.8"/>
+													</Position>
+												</Waypoint>
+												<Waypoint routeStrategy="shortest">
+													<Position>
+														<WorldPosition x="210.7" y="-40.5"/>
+													</Position>
+												</Waypoint>
+											</Route>
+										</AssignRouteAction>
 									</RoutingAction>
 								</PrivateAction>
 							</Action>
@@ -237,11 +251,11 @@
 						</Event>
 					</Maneuver>
 				</ManeuverGroup>
-                <ManeuverGroup maximumExecutionCount="1" name="ManeuverGroup2">
+                <ManeuverGroup maximumExecutionCount="1" name="ManeuverGroup3">
 					<Actors selectTriggeringEntities="false">
 						<EntityRef entityRef="vehicle_002" />
 					</Actors>
-					<Maneuver name="Maneuver2">
+					<Maneuver name="Maneuver3">
 						<Event name="E1ofActorvehicle_002" priority="parallel">
 							<Action name="A1ofE1ofActorvehicle_002">
 								<PrivateAction>
@@ -393,7 +407,22 @@
 				</Condition>
 				<Condition name="criteria_DrivenDistanceTest" delay="0" conditionEdge="rising">
 					<ByValueCondition>
-						<ParameterCondition parameterRef="distance_success" value="30" rule="lessThan"/>
+						<ParameterCondition parameterRef="distance_success" value="40" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+				<Condition name="criteria_OffRoadTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+					<Condition name="criteria_RouteCompletionTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
+					</ByValueCondition>
+				</Condition>
+					<Condition name="criteria_InRouteTest" delay="0" conditionEdge="rising">
+					<ByValueCondition>
+						<ParameterCondition parameterRef="" value="" rule="lessThan"/>
 					</ByValueCondition>
 				</Condition>
 			</ConditionGroup>
