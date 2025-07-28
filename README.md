@@ -39,15 +39,14 @@ autonomous driving! 🚗
 
 ## 🌍 Introduction of the Safety2Drive
 
-- The benchmark are in the standard OpenSCENARIO format, including 70 carefully designed standard regulatory scenarios for functional testing, 30 safety-critical scenarios, and support for 30 adversarial attack algorithms. Each of these 100 functional test items can be generalized to multiple scenarios. Theoretically, the benchmark contains an infinite number of scenarios.
+- The benchmark are in the standard OpenSCENARIO format, including 70 carefully designed standard regulatory scenarios for functional testing, and support for 30 adversarial attack algorithms. Each of these 100 functional test items can be generalized to multiple scenarios. Theoretically, the benchmark contains an infinite number of scenarios.
 
 |            Subset            | Number | File List |
 | :---------------------------: | :----: | :-------: |
 | Functional Test |  70  | xosc file |
-|   safety-critical scenarios   |   30   | xosc file |
 | adversarial attack scenarios |   30   | xosc file |
 
-Note that the file in Repo contains 15 representative scenarios. You can contact us via email to get the full scenario file.
+Note that the full scenario file is in Scene_leaderboard. 
 
 <!-- Introduction -->
 
@@ -88,14 +87,16 @@ documentation.
 
 |                           Weather-level corruptions                          | 
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| ![corruption1.png](/gif_files/Corruptions/corruption1.png)|
 
-| ![corruption1.png](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Corruptions/corruption1.png)|
 |                           Sensor-level corruptions                          | 
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| ![corruption1.png](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Corruptions/corruption1.png)|
+| ![corruption2.png](/gif_files/Corruptions/corruption2.png)|
+
+
 |                           Object-level corruptions                          | 
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| ![corruption1.png](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Corruptions/corruption1.png)|
+| ![corruption3.png](/gif_files/Corruptions/corruption3.png)|
 
 ### Here are 4 safety-critical scenarios
 
@@ -262,4 +263,3 @@ documentation.
 
 - [ ]  V1.1 Release
   - [ ] Safety-Critical Scenario Generation algorithms
-
