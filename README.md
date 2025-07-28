@@ -93,13 +93,15 @@ documentation.
 
 |                           Sensor-level corruptions                          | 
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|![Right turn hard FOV](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Corruptions/corruption2.pdf) |
+
+|![corruption2.pdf](https://github.com/user-attachments/files/21458302/corruption2.pdf) |
 
 |                           Object-level corruptions                          | 
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|![Right turn hard FOV](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Corruptions/corruption3.pdf) |
+|![corruption3.pdf](https://github.com/user-attachments/files/21458313/corruption3.pdf) |
 
 ### Here are 4 safety-critical scenarios
+
 
 ---
 
