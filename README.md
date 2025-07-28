@@ -90,21 +90,14 @@ documentation.
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
 | ![corruption1.png](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Corruptions/corruption1.png)|
-
 |                           Sensor-level corruptions                          | 
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-
-
-
-
-|![corruption2.pdf](https://github.com/user-attachments/files/21458302/corruption2.pdf) |
-
+| ![corruption1.png](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Corruptions/corruption1.png)|
 |                           Object-level corruptions                          | 
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|![corruption3.pdf](https://github.com/user-attachments/files/21458313/corruption3.pdf) |
+| ![corruption1.png](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Corruptions/corruption1.png)|
 
 ### Here are 4 safety-critical scenarios
-
 
 ---
 
@@ -269,3 +262,4 @@ documentation.
 
 - [ ]  V1.1 Release
   - [ ] Safety-Critical Scenario Generation algorithms
+
