@@ -86,11 +86,16 @@ documentation.
 
 ### 16 types of natural environmental corruption: Snow, Rain, Fog, Strong Sunlight, Gaussian Noise, Uniform Noise, Impulse Noise, Density Decrease, Cutout,LiDAR Crosstalk, Motion Blur, Local Density Decrease, Local Cutout, Local Gaussian Noise, Local Uniform Noise and Local Impluse Noise.
 
----
+|                           Weather-level corruptions                          | 
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
-|                           Sunny                          |                           Rain                           |                          midnight                           |                           Fog                           |
-| :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
-| <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/SunnyDay.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/RainyDay.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/NightTime.gif" width="128" height="128"> | <img src="https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Environmental_interference/FoggyDay.gif" width="128" height="128"> |
+| ![Right turn hard FOV](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Corruptions/corruption1.pdf)|
+|                           Sensor-level corruptions                          | 
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|![Right turn hard FOV](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Corruptions/corruption2.pdf) |
+|                           Object-level corruptions                          | 
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+|![Right turn hard FOV](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Corruptions/corruption3.pdf) |
 
 ### Here are 4 safety-critical scenarios
 

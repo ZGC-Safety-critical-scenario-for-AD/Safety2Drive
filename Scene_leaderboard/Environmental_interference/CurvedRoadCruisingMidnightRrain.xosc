@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='utf-8'?>
+<OpenSCENARIO>
+  <FileHeader revMajor="1" revMinor="0" date="2024-07-22T12:16:08" description="巡航（弯道）,小雨午夜" author="Jiacheng Chen"/>
+  <CatalogLocations/>
+  <RoadNetwork>
+    <LogicFile filepath="Town05"/>
+  </RoadNetwork>
+  <Entities>
+    <ScenarioObject name="hero">
+      <Vehicle name="vehicle.tesla.model3" vehicleCategory="car">
+        <ParameterDeclarations/>
+        <Performance maxSpeed="69.444" maxAcceleration="200" maxDeceleration="10.0"/>
+        <BoundingBox>
+          <Center x="1.5" y="0.0" z="0.9"/>
+          <Dimensions width="2.1" length="4.5" height="1.8"/>
+        </BoundingBox>
+        <Axles>
+          <FrontAxle maxSteering="0.5" wheelDiameter="0.6" trackWidth="1.8" positionX="3.1" positionZ="0.3"/>
+          <RearAxle maxSteering="0.0" wheelDiameter="0.6" trackWidth="1.8" positionX="0.0" positionZ="0.3"/>
+        </Axles>
+        <Properties>
+          <Property name="type" value="ego_vehicle"/>
+        </Properties>
+      </Vehicle>
+    </ScenarioObject>
+  </Entities>
+  <Storyboard>
+    <Init>
+      <Actions>
+        <GlobalAction>
+          <EnvironmentAction>
+            <Environment name="Environment1">
+              <TimeOfDay animation="true" dateTime="2020-09-23T00:00:00"/>
+              <Weather cloudState="overcast">
+                <Sun intensity="0.0" azimuth="0" elevation="0"/>
+                <Fog visualRange="5000"/>
+                <Precipitation precipitationType="rain" intensity="0.5"/>
+              </Weather>
+              <RoadCondition frictionScaleFactor="1.0"/>
+            </Environment>
+          </EnvironmentAction>
+        </GlobalAction>
+        <Private entityRef="hero">
+          <PrivateAction>
+            <ControllerAction>
+              <AssignControllerAction>
+                <Controller name="HeroAgent">
+                  <Properties>
+                    <Property name="module" value="external_control"/>
+                  </Properties>
+                </Controller>
+              </AssignControllerAction>
+              <OverrideControllerValueAction>
+                <Throttle value="0" active="false"/>
+                <Brake value="0" active="false"/>
+                <Clutch value="0" active="false"/>
+                <ParkingBrake value="0" active="false"/>
+                <SteeringWheel value="0" active="false"/>
+                <Gear number="0" active="false"/>
+              </OverrideControllerValueAction>
+            </ControllerAction>
+          </PrivateAction>
+          <PrivateAction>
+            <LongitudinalAction>
+              <SpeedAction>
+                <SpeedActionDynamics dynamicsShape="step" value="0" dynamicsDimension="time"/>
+                <SpeedActionTarget>
+                  <AbsoluteTargetSpeed value="6"/>
+                </SpeedActionTarget>
+              </SpeedAction>
+            </LongitudinalAction>
+          </PrivateAction>
+          <PrivateAction>
+            <TeleportAction>
+              <Position>
+                <WorldPosition x="80" y="-208.871" z="0.34" h="0.0005061454830783556" p="0.010559241974565694" r="0.0"/>
+              </Position>
+            </TeleportAction>
+          </PrivateAction>
+        </Private>
+      </Actions>
+    </Init>
+    <Story name="MyStory">
+      <Act name="Act1">
+        <ManeuverGroup maximumExecutionCount="1" name="ManeuverGroup1">
+          <Actors selectTriggeringEntities="false">
+            <EntityRef entityRef="hero"/>
+          </Actors>
+          <Maneuver name="Maneuver1">
+            <Event name="E1ofActorego_vehicle" priority="parallel">
+              <Action name="A1ofE1ofActorego_vehicle">
+                <PrivateAction>
+                  <RoutingAction>
+                    <AssignRouteAction>
+                      <Route closed="false" name="route">
+                        <Waypoint routeStrategy="shortest">
+                          <Position>
+                            <WorldPosition x="100.9" y="-208.9"/>
+                          </Position>
+                        </Waypoint>
+                        <Waypoint routeStrategy="shortest">
+                          <Position>
+                            <WorldPosition x="120.1" y="-207.2"/>
+                          </Position>
+                        </Waypoint>
+                        <Waypoint routeStrategy="shortest">
+                          <Position>
+                            <WorldPosition x="131.9" y="-204.1"/>
+                          </Position>
+                        </Waypoint>
+                        <Waypoint routeStrategy="shortest">
+                          <Position>
+                            <WorldPosition x="147.7" y="-198.1"/>
+                          </Position>
+                        </Waypoint>
+                      </Route>
+                    </AssignRouteAction>
+                  </RoutingAction>
+                </PrivateAction>
+              </Action>
+              <StartTrigger>
+                <ConditionGroup>
+                  <Condition name="C1ofCG1ofE1ofActorego_vehicle" delay="0" conditionEdge="rising">
+                    <ByValueCondition>
+                      <SimulationTimeCondition value="0" rule="greaterThan"/>
+                    </ByValueCondition>
+                  </Condition>
+                </ConditionGroup>
+              </StartTrigger>
+            </Event>
+          </Maneuver>
+        </ManeuverGroup>
+        <StartTrigger>
+          <ConditionGroup>
+            <Condition name="ActStartCondition" delay="0" conditionEdge="rising">
+              <ByValueCondition>
+                <SimulationTimeCondition value="0" rule="greaterThan"/>
+              </ByValueCondition>
+            </Condition>
+          </ConditionGroup>
+        </StartTrigger>
+        <StopTrigger>
+          <ConditionGroup>
+            <Condition name="EndCondition" delay="0" conditionEdge="rising">
+              <ByEntityCondition>
+                <TriggeringEntities triggeringEntitiesRule="any">
+                  <EntityRef entityRef="hero"/>
+                </TriggeringEntities>
+                <EntityCondition>
+                  <TraveledDistanceCondition value="80.0"/>
+                </EntityCondition>
+              </ByEntityCondition>
+            </Condition>
+          </ConditionGroup>
+        </StopTrigger>
+      </Act>
+    </Story>
+    <StopTrigger>
+      <ConditionGroup>
+        <Condition name="criteria_RunningStopTest" delay="0" conditionEdge="rising">
+          <ByValueCondition>
+            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
+          </ByValueCondition>
+        </Condition>
+        <Condition name="criteria_RunningRedLightTest" delay="0" conditionEdge="rising">
+          <ByValueCondition>
+            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
+          </ByValueCondition>
+        </Condition>
+        <Condition name="criteria_WrongLaneTest" delay="0" conditionEdge="rising">
+          <ByValueCondition>
+            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
+          </ByValueCondition>
+        </Condition>
+        <Condition name="criteria_OnSidewalkTest" delay="0" conditionEdge="rising">
+          <ByValueCondition>
+            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
+          </ByValueCondition>
+        </Condition>
+        <Condition name="criteria_KeepLaneTest" delay="0" conditionEdge="rising">
+          <ByValueCondition>
+            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
+          </ByValueCondition>
+        </Condition>
+        <Condition name="criteria_CollisionTest" delay="0" conditionEdge="rising">
+          <ByValueCondition>
+            <ParameterCondition parameterRef="" value="" rule="lessThan"/>
+          </ByValueCondition>
+        </Condition>
+        <Condition name="criteria_DrivenDistanceTest" delay="0" conditionEdge="rising">
+          <ByValueCondition>
+            <ParameterCondition parameterRef="distance_success" value="60" rule="lessThan"/>
+          </ByValueCondition>
+        </Condition>
+      </ConditionGroup>
+    </StopTrigger>
+  </Storyboard>
+</OpenSCENARIO>
