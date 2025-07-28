@@ -89,7 +89,7 @@ documentation.
 |                           Weather-level corruptions                          | 
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
-| ![corruption1.pdf](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Corruptions/corruption1.png)|
+| ![corruption1.png](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Corruptions/corruption1.png)|
 
 |                           Sensor-level corruptions                          | 
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
