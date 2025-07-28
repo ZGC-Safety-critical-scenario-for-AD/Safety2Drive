@@ -85,18 +85,17 @@ documentation.
 
 ### 16 types of natural environmental corruption: Snow, Rain, Fog, Strong Sunlight, Gaussian Noise, Uniform Noise, Impulse Noise, Density Decrease, Cutout,LiDAR Crosstalk, Motion Blur, Local Density Decrease, Local Cutout, Local Gaussian Noise, Local Uniform Noise and Local Impluse Noise.
 
-|                           Weather-level corruptions                          | 
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| ![corruption1.png](/gif_files/Corruptions/corruption1.png)|
+| Weather-level corruptions |
+|:-------------------------:|
+| <img src="/gif_files/Corruptions/corruption1.png" width="400"/> |
 
-|                           Sensor-level corruptions                          | 
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| ![corruption2.png](/gif_files/Corruptions/corruption2.png)|
+| Sensor-level corruptions |
+|:------------------------:|
+| <img src="/gif_files/Corruptions/corruption2.png" width="400"/> |
 
-
-|                           Object-level corruptions                          | 
-| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-| ![corruption3.png](/gif_files/Corruptions/corruption3.png)|
+| Object-level corruptions |
+|:------------------------:|
+| <img src="/gif_files/Corruptions/corruption3.png" width="400"/> |
 
 ### Here are 4 safety-critical scenarios
 
