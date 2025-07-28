@@ -89,10 +89,12 @@ documentation.
 |                           Weather-level corruptions                          | 
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 
-| ![Right turn hard FOV](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Corruptions/corruption1.pdf)|
+| [corruption1.pdf](https://github.com/user-attachments/files/21458293/corruption1.pdf)|
+
 |                           Sensor-level corruptions                          | 
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |![Right turn hard FOV](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Corruptions/corruption2.pdf) |
+
 |                           Object-level corruptions                          | 
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |![Right turn hard FOV](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Corruptions/corruption3.pdf) |
