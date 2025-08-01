@@ -191,7 +191,7 @@ documentation.
     </tr>
 </table>
 
-#### Transfuser
+#### Garage
 |                                      Lane Change With Cone                                          |                                          Sudden Pedestrian Crossing                                          |
 | :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
 | ![Traffic Light](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/transfuser_cone.gif) | ![Stop Sign](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/transfuser_ghost.gif) |
@@ -206,14 +206,14 @@ documentation.
         <th>Driving Score</th>
     </tr>
     <tr>
-        <td>Transfuser</td>
+        <td>Garage</td>
         <td>Lane Change With Cone</td>
         <td>True</td>
         <td>False</td>
         <td>0.1785</td>
     </tr>
     <tr>
-        <td>Transfuser</td>
+        <td>Garage</td>
         <td>Sudden Pedestrian Crossing</td>
         <td>False</td>
         <td>True</td>
