@@ -44,7 +44,6 @@ autonomous driving! 🚗
 |            Subset            | Number | File List |
 | :---------------------------: | :----: | :-------: |
 | Functional Test |  70  | xosc file |
-| adversarial attack scenarios |   30   | xosc file |
 
 Note that the full scenario file is in Scene_leaderboard. 
 
@@ -178,14 +177,14 @@ documentation.
     </tr>
     <tr>
         <td>Autopilot</td>
-        <td>Cone</td>
+        <td>Lane Change With Cone</td>
         <td>True</td>
         <td>False</td>
         <td>0.2746</td>
     </tr>
     <tr>
         <td>Autopilot</td>
-        <td>Ghost</td>
+        <td>Sudden Pedestrian Crossing</td>
         <td>False</td>
         <td>True</td>
         <td>1.0</td>
@@ -208,21 +207,21 @@ documentation.
     </tr>
     <tr>
         <td>Transfuser</td>
-        <td>Cone</td>
+        <td>Lane Change With Cone</td>
         <td>True</td>
         <td>False</td>
         <td>0.1785</td>
     </tr>
     <tr>
         <td>Transfuser</td>
-        <td>Ghost</td>
+        <td>Sudden Pedestrian Crossing</td>
         <td>False</td>
         <td>True</td>
         <td>1.0</td>
     </tr>
 </table>
 
-#### Garage
+#### TransFuser
 |                                      Lane Change With Cone                                           |                                           Sudden Pedestrian Crossing                                          |
 | :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
 | ![Traffic Light](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/garage_cone.gif) | ![Stop Sign](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/garage_ghost.gif) |
@@ -237,15 +236,15 @@ documentation.
         <th>Driving Score</th>
     </tr>
     <tr>
-        <td>Garage</td>
-        <td>Cone</td>
+        <td>TransFuser</td>
+        <td>Lane Change With Cone</td>
         <td>True</td>
         <td>False</td>
         <td>0.4225</td>
     </tr>
     <tr>
-        <td>Garage</td>
-        <td>Ghost</td>
+        <td>TransFuser</td>
+        <td>Sudden Pedestrian Crossing</td>
         <td>False</td>
         <td>True</td>
         <td>1.0</td>

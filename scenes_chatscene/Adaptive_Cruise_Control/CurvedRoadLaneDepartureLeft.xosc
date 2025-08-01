@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <OpenSCENARIO>
-	<FileHeader revMajor="1" revMinor="0" date="2024-09-23T16:52:14" description="（弯道）向左偏离测试" author="Jiacheng Chen" />
+	<FileHeader revMajor="1" revMinor="0" date="2024-09-23T16:52:14" description="（弯道）向左偏离测试" author="Anonymity" />
 	<CatalogLocations />
 	<RoadNetwork>
 		<LogicFile filepath="Town04" />

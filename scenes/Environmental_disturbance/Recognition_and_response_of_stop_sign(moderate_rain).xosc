@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <OpenSCENARIO>
-	<FileHeader revMajor="1" revMinor="0" date="2024-07-22T12:16:08" description="停车让行标志标线识别及响应 中雨" author="Jiacheng Chen" />
+	<FileHeader revMajor="1" revMinor="0" date="2024-07-22T12:16:08" description="停车让行标志标线识别及响应 中雨" author="Anonymity" />
 	<CatalogLocations />
 	<RoadNetwork>
 		<LogicFile filepath="Town07" />

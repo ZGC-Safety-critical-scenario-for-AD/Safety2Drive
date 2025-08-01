@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <OpenSCENARIO>
-	<FileHeader revMajor="1" revMinor="0" date="2024-05-29T17:51:54" description="对向车辆正常行驶" author="Jiacheng Chen" />
+	<FileHeader revMajor="1" revMinor="0" date="2024-05-29T17:51:54" description="对向车辆正常行驶" author="Anonymity" />
 	<CatalogLocations />
 	<RoadNetwork>
 		<LogicFile filepath="Town10HD" />

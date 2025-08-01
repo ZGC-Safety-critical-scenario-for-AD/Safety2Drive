@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <OpenSCENARIO>
-  <FileHeader revMajor="1" revMinor="0" date="2024-05-29T17:51:54" description="行人沿道路行走" author="Jiacheng Chen"/>
+  <FileHeader revMajor="1" revMinor="0" date="2024-05-29T17:51:54" description="行人沿道路行走" author="Anonymity"/>
   <CatalogLocations/>
   <RoadNetwork>
     <LogicFile filepath="Town10HD"/>
