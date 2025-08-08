@@ -17,4 +17,4 @@ export RESUME=
 
 python3 leaderboard_xosc.py \
 --agent=${TEAM_AGENT} \
---scenarios=/mnt/data/cjc/Scene/Standards_and_regulations/Two-wheeler_cuts_out_in_front_of_a_walking_pedestrian.xosc
+--scenarios=Scene_leaderboard/Overtaking/AccidentWarningObjectDetection.xosc

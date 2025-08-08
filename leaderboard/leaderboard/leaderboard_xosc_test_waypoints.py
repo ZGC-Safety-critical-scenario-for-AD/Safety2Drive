@@ -555,7 +555,7 @@ def main():
                         help='Use CARLA recording feature to create a recording of the scenario')
     parser.add_argument('--timeout', default="90.0",
                         help='Set the CARLA client timeout value in seconds')
-    parser.add_argument('--openscenario', help='Provide an OpenSCENARIO definition',default='/mnt/data/cjc/Scene/Regulation_and_control/Target_vehicle_decelerates_straight_lane.xosc')
+    parser.add_argument('--openscenario', help='Provide an OpenSCENARIO definition',default='Scene_leaderboard/Overtaking/AccidentWarningObjectDetection.xosc')
     parser.add_argument('--sync', action='store_true',
                         help='Forces the simulation to run synchronously')
     parser.add_argument(
