@@ -2,10 +2,7 @@
 
 ### 🆕 Updates
 
-- **`2025-01-06:`** We've launched the safety-critical scenario benchmark for 
-
-
-autonomous driving! 🚗
+- **`2025-01-06:`** We've launched the safety-critical scenario benchmark for autonomous driving! 🚗
 
 ---
 
@@ -39,7 +36,7 @@ autonomous driving! 🚗
 
 ## 🌍 Introduction of the Safety2Drive
 
-- The benchmark are in the standard OpenSCENARIO format, including 70 carefully designed standard regulatory scenarios for functional testing, and support for 30 adversarial attack algorithms. Each of these 100 functional test items can be generalized to multiple scenarios. Theoretically, the benchmark contains an infinite number of scenarios.
+- The benchmark are in the standard OpenSCENARIO format, including 70 carefully designed standard regulatory scenarios for functional test, and support for 30 adversarial attack algorithms. Each of these 70 functional test items can be generalized to multiple scenarios. Theoretically, the benchmark contains an infinite number of scenarios.
 
 |            Subset            | Number | File List |
 | :---------------------------: | :----: | :-------: |
@@ -69,7 +66,7 @@ Note that the full scenario file is in Scene_leaderboard.
 
 ---
 
-Please take a look at the [Getting started](scenario_ruuner/Docs/getting_scenariorunner.md)
+Please take a look at the [Getting started](scenario_runner/Docs/getting_scenariorunner.md)
 documentation.
 
 ### Here are 5 driving scenarios
