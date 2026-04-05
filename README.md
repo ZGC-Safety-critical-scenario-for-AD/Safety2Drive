@@ -11,12 +11,12 @@
 
 <div align="left">
     <a href="https://arxiv.org/pdf/2505.13872"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white?style=flat-square" alt="Custom badge" style="height: 28px;"></a>     
-    <a href="https://arxiv.org/pdf/2505.13872"><img src="https://img.shields.io/static/v1?label=Supplementary&message=Material&color=2ea44f&logo=googledocs&logoColor=white&style=flat-square" alt="Supplementary Material badge" style="height: 28px;"></a>
+    <a href="https://pan.quark.cn/s/427e0e70165b"><img src="https://img.shields.io/static/v1?label=Supplementary&message=Material&color=2ea44f&logo=googledocs&logoColor=white&style=flat-square" alt="Supplementary Material badge" style="height: 28px;"></a>
 </div>
 
 ##  :sparkles: News
 <!-- - **`2026-034`** Explore our project page, now live [here](https://currychen77.github.io/ForSim/)🔗! -->
-- **`2026-02`** Supplementary materials is available on <span style="color:red">ICRA 2026</span>🎉🎉!
+- **`2026-02`** Supplementary materials is available  [online](https://pan.quark.cn/s/427e0e70165b)📄!.
 - **`2025-01`** Our paper is available on [arXiv](https://arxiv.org/pdf/2505.13872)📄!
 
 
@@ -180,35 +180,6 @@ documentation.
           tools\
           --> Please link your model folder HEAR
     ```
-#### Autopilot
-|                                      Lane Change With Cone                                          |                                          Sudden Pedestrian Crossing                                          |
-| :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
-| ![Traffic Light](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/auto_cone.gif) | ![Stop Sign](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/auto_ghost.gif) |
-
-
-<table>
-    <tr style="background-color: #C7C7C7; color: white;">
-        <th>Driving Agent</th>
-        <th>Scenarios</th>
-        <th>Collision</th>
-        <th>Complete Route</th>
-        <th>Driving Score</th>
-    </tr>
-    <tr>
-        <td>Autopilot</td>
-        <td>Cone</td>
-        <td>True</td>
-        <td>False</td>
-        <td>0.2746</td>
-    </tr>
-    <tr>
-        <td>Autopilot</td>
-        <td>Ghost</td>
-        <td>False</td>
-        <td>True</td>
-        <td>1.0</td>
-    </tr>
-</table>
 
 #### Transfuser
 |                                      Lane Change With Cone                                          |                                          Sudden Pedestrian Crossing                                          |
@@ -233,36 +204,6 @@ documentation.
     </tr>
     <tr>
         <td>Transfuser</td>
-        <td>Ghost</td>
-        <td>False</td>
-        <td>True</td>
-        <td>1.0</td>
-    </tr>
-</table>
-
-#### Garage
-|                                      Lane Change With Cone                                           |                                           Sudden Pedestrian Crossing                                          |
-| :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
-| ![Traffic Light](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/garage_cone.gif) | ![Stop Sign](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/garage_ghost.gif) |
-
-
-<table>
-    <tr style="background-color: #C7C7C7; color: white;">
-        <th>Driving Agent</th>
-        <th>Scenarios</th>
-        <th>Collision</th>
-        <th>Complete Route</th>
-        <th>Driving Score</th>
-    </tr>
-    <tr>
-        <td>Garage</td>
-        <td>Cone</td>
-        <td>True</td>
-        <td>False</td>
-        <td>0.4225</td>
-    </tr>
-    <tr>
-        <td>Garage</td>
         <td>Ghost</td>
         <td>False</td>
         <td>True</td>
