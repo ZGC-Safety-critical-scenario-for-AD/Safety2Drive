@@ -1,8 +1,28 @@
-# Safety-Critical-Scenario-Benchmark-for-AD
+<!-- # Safety-Critical-Scenario-Benchmark-for-AD -->
 
-### 🆕 Updates
+<!-- ### 🆕 Updates
 
-- **`2025-01-06:`** We've launched the safety-critical scenario benchmark for autonomous driving! 🚗
+- **`2025-01-06:`** We've launched the safety-critical scenario benchmark for 
+ -->
+
+
+
+# Safety2Drive: Safety-Critical Scenario Benchmark for the Evaluation of  Autonomous Driving
+
+<div align="left">
+    <a href="https://arxiv.org/pdf/2505.13872"><img src="https://img.shields.io/badge/Paper-arXiv-b31b1b?logo=arxiv&logoColor=white?style=flat-square" alt="Custom badge" style="height: 28px;"></a>     
+    <a href="https://arxiv.org/pdf/2505.13872"><img src="https://img.shields.io/static/v1?label=Supplementary&message=Material&color=2ea44f&logo=googledocs&logoColor=white&style=flat-square" alt="Supplementary Material badge" style="height: 28px;"></a>
+</div>
+
+##  :sparkles: News
+<!-- - **`2026-034`** Explore our project page, now live [here](https://currychen77.github.io/ForSim/)🔗! -->
+- **`2026-02`** Supplementary materials is available on <span style="color:red">ICRA 2026</span>🎉🎉!
+- **`2025-01`** Our paper is available on [arXiv](https://arxiv.org/pdf/2505.13872)📄!
+
+
+
+
+autonomous driving! 🚗
 
 ---
 
@@ -25,8 +45,8 @@
   - 1. Autopilot
   - 2. Garage
   - 3. Interfuser
+- [🔍 Safety-Critical Scenario Generation with Large Models](#-Safety-Critical-Scenario-Generation-with-Large-Models)
 - [📌 Roadmap](#-Roadmap)
-- [🔍 Safety-Critical Scenario Generation algorithms (Stay Tuned)](#-Safety-Critical-Scenario-Generation-algorithms)
 - [Acknowledgments]
 - [📝 License]
 - [🔖 Citation]
@@ -36,11 +56,12 @@
 
 ## 🌍 Introduction of the Safety2Drive
 
-- The benchmark are in the standard OpenSCENARIO format, including 70 carefully designed standard regulatory scenarios for functional test, and support for 30 adversarial attack algorithms. Each of these 70 functional test items can be generalized to multiple scenarios. Theoretically, the benchmark contains an infinite number of scenarios.
+- The benchmark are in the standard OpenSCENARIO format, including 70 carefully designed standard regulatory scenarios for functional testing, and support for 30 adversarial attack algorithms. Each of the functional test items can be generalized to multiple scenarios. Theoretically, the benchmark contains an infinite number of scenarios.
 
 |            Subset            | Number | File List |
 | :---------------------------: | :----: | :-------: |
 | Functional Test |  70  | xosc file |
+| adversarial attack scenarios |   30   | xosc file |
 
 Note that the full scenario file is in Scene_leaderboard. 
 
@@ -66,7 +87,7 @@ Note that the full scenario file is in Scene_leaderboard.
 
 ---
 
-Please take a look at the [Getting started](scenario_runner/Docs/getting_scenariorunner.md)
+Please take a look at the [Getting started](scenario_ruuner/Docs/getting_scenariorunner.md)
 documentation.
 
 ### Here are 5 driving scenarios
@@ -81,17 +102,18 @@ documentation.
 
 ### 16 types of natural environmental corruption: Snow, Rain, Fog, Strong Sunlight, Gaussian Noise, Uniform Noise, Impulse Noise, Density Decrease, Cutout,LiDAR Crosstalk, Motion Blur, Local Density Decrease, Local Cutout, Local Gaussian Noise, Local Uniform Noise and Local Impluse Noise.
 
-| Weather-level corruptions |
-|:-------------------------:|
-| <img src="/gif_files/Corruptions/corruption1.png" width="400"/> |
+|                           Weather-level corruptions                          | 
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| ![corruption1.png](/gif_files/Corruptions/corruption1.png)|
 
-| Sensor-level corruptions |
-|:------------------------:|
-| <img src="/gif_files/Corruptions/corruption2.png" width="400"/> |
+|                           Sensor-level corruptions                          | 
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| ![corruption2.png](/gif_files/Corruptions/corruption2.png)|
 
-| Object-level corruptions |
-|:------------------------:|
-| <img src="/gif_files/Corruptions/corruption3.png" width="400"/> |
+
+|                           Object-level corruptions                          | 
+| :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
+| ![corruption3.png](/gif_files/Corruptions/corruption3.png)|
 
 ### Here are 4 safety-critical scenarios
 
@@ -174,21 +196,21 @@ documentation.
     </tr>
     <tr>
         <td>Autopilot</td>
-        <td>Lane Change With Cone</td>
+        <td>Cone</td>
         <td>True</td>
         <td>False</td>
         <td>0.2746</td>
     </tr>
     <tr>
         <td>Autopilot</td>
-        <td>Sudden Pedestrian Crossing</td>
+        <td>Ghost</td>
         <td>False</td>
         <td>True</td>
         <td>1.0</td>
     </tr>
 </table>
 
-#### Garage
+#### Transfuser
 |                                      Lane Change With Cone                                          |                                          Sudden Pedestrian Crossing                                          |
 | :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
 | ![Traffic Light](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/transfuser_cone.gif) | ![Stop Sign](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/transfuser_ghost.gif) |
@@ -203,22 +225,22 @@ documentation.
         <th>Driving Score</th>
     </tr>
     <tr>
-        <td>Garage</td>
-        <td>Lane Change With Cone</td>
+        <td>Transfuser</td>
+        <td>Cone</td>
         <td>True</td>
         <td>False</td>
         <td>0.1785</td>
     </tr>
     <tr>
-        <td>Garage</td>
-        <td>Sudden Pedestrian Crossing</td>
+        <td>Transfuser</td>
+        <td>Ghost</td>
         <td>False</td>
         <td>True</td>
         <td>1.0</td>
     </tr>
 </table>
 
-#### TransFuser
+#### Garage
 |                                      Lane Change With Cone                                           |                                           Sudden Pedestrian Crossing                                          |
 | :------------------------------------------------------------------------------------------: | :-----------------------------------------------------------------------------------------: |
 | ![Traffic Light](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/garage_cone.gif) | ![Stop Sign](https://github.com/ZGC-Safety-critical-scenario-for-AD/Safety2Drive/blob/main/gif_files/Agent/garage_ghost.gif) |
@@ -233,28 +255,67 @@ documentation.
         <th>Driving Score</th>
     </tr>
     <tr>
-        <td>TransFuser</td>
-        <td>Lane Change With Cone</td>
+        <td>Garage</td>
+        <td>Cone</td>
         <td>True</td>
         <td>False</td>
         <td>0.4225</td>
     </tr>
     <tr>
-        <td>TransFuser</td>
-        <td>Sudden Pedestrian Crossing</td>
+        <td>Garage</td>
+        <td>Ghost</td>
         <td>False</td>
         <td>True</td>
         <td>1.0</td>
     </tr>
 </table>
+
+## 🔍 Safety-Critical Scenario Generation with Large Models
+
+- Safety2Drive now supports large-model-driven scenario generation with **ChatScene/TTSG**.
+
+### Case 1
+
+**User Prompt**
+```text
+The ego vehicle is turning left; the adversarialcar suddenly apears ahead.
+```
+
+**Generated Scenario**
+<!-- TODO: Replace with the generated scenario image for Case 1 -->
+![Case 1 Generated Scenario](./gif_files/LLM_Generation/case1.png)
+
+### Case 2
+
+**User Prompt**
+```text
+The ego vehicle is changing to the right lane; the adversarial car is blocking its path.
+```
+
+**Generated Scenario**
+<!-- TODO: Replace with the generated scenario image for Case 2 -->
+![Case 2 Generated Scenario](./gif_files/LLM_Generation/case2.png)
 <!-- ROADMAP -->
-## 📌 Roadmap
 
-- [X] Demo Website Release
-- [X] V1.0 Release
-  - [X] Benchmark
-  - [X] Perception Task
-  - [X] Driving Agent Support
 
-- [ ]  V1.1 Release
-  - [ ] Safety-Critical Scenario Generation algorithms
+## Citation
+
+If you find our paper useful, please kindly cite us via:
+
+```BibTex
+@article{li2025safety2drive,
+  title={Safety2Drive: Safety-Critical Scenario Benchmark for the Evaluation of Autonomous Driving},
+  author={Li, Jingzheng and Wang, Tiancheng and Peng, Xingyu and Chen, Jiacheng and Chen, Zhijun and Li, Bing and Liu, Xianglong},
+  journal={arXiv preprint arXiv:2505.13872},
+  year={2025}
+}
+```
+
+## Acknowledgement
+
+This implementation is based on code from several repositories. We sincerely thank the authors for their awesome work.
+- [TransFuser](https://github.com/autonomousvision/transfuser)
+- [Bench2Drive](https://github.com/Thinklab-SJTU/Bench2Drive)
+- [ChatScene](https://github.com/javyduck/ChatScene)
+- [ISS_Scenario](https://github.com/CAS-LRJ/ISS_Scenario)
+- [TTSG](https://github.com/basiclab/TTSG)
