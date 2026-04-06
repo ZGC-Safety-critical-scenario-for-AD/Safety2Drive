@@ -20,10 +20,6 @@
 - **`2025-01`** Our paper is available on [arXiv](https://arxiv.org/pdf/2505.13872)📄!
 
 
-
-
-autonomous driving! 🚗
-
 ---
 
 ## Table of Contents:
@@ -46,7 +42,6 @@ autonomous driving! 🚗
   - 2. Garage
   - 3. Interfuser
 - [🔍 Safety-Critical Scenario Generation with Large Models](#-Safety-Critical-Scenario-Generation-with-Large-Models)
-- [📌 Roadmap](#-Roadmap)
 - [Acknowledgments]
 - [📝 License]
 - [🔖 Citation]
