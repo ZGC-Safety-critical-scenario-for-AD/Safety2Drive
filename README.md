@@ -16,7 +16,7 @@
 
 ##  :sparkles: News
 <!-- - **`2026-034`** Explore our project page, now live [here](https://currychen77.github.io/ForSim/)🔗! -->
-- **`2026-02`** Supplementary materials is available  [online](https://pan.quark.cn/s/427e0e70165b)📄!.
+- **`2026-04`** Supplementary materials is available  [online](https://pan.quark.cn/s/427e0e70165b)📄!.
 - **`2025-01`** Our paper is available on [arXiv](https://arxiv.org/pdf/2505.13872)📄!
 
 
@@ -38,9 +38,7 @@
   - 3. Camouflage-based Physical Attacks
   - 4. Backdoor Attacks
 - [🏁 Leaderboard of Driving Agents](#-Leaderboard-of-Driving-Agents)
-  - 1. Autopilot
-  - 2. Garage
-  - 3. Interfuser
+  - 1. TransFuser
 - [🔍 Safety-Critical Scenario Generation with Large Models](#-Safety-Critical-Scenario-Generation-with-Large-Models)
 - [Acknowledgments]
 - [📝 License]
